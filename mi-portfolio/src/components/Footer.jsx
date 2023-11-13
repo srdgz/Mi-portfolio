@@ -2,7 +2,7 @@ import react from "../assets/react.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white fixed bottom-0 left-0 right-0">
+    <footer className="bg-white bottom-0 left-0 right-0">
       <hr className="border-t border-gray-300 max-w-3xl mx-auto" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between">
         <span className="text-sm text-gray-800 sm:text-center flex items-center mb-2 sm:mb-0">

@@ -4,9 +4,9 @@ import front from "../assets/front.png";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center h-2/3 md:mt-40">
-      <div className="w-full h-full md:w-1/2 flex items-center justify-center">
-        <div className="text-center text-gray-800 p-6 mt-8 md:mt-0">
+    <div className="flex flex-col h-screen md:flex-row items-center justify-center">
+      <div className="w-full h-screen md:w-1/2 flex items-center justify-center">
+        <div className="text-center text-gray-800 p-6">
           <h1 className="text-2xl md:text-4xl font-bold mb-6">¡Hey! 👋🏻 </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4">
             ¡Bienvenid@ a mi portfolio!
@@ -32,9 +32,9 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-      <div className="w-80 h-80 md:w-1/2 mb-32 flex items-center justify-center">
+      <div className="w-80 h-80 md:w-1/2 flex items-center justify-center">
         <img
-          className="object-cover ms-2 me-2 md:mt-28 bg-opacity-0 rounded-full"
+          className="object-cover ms-2 me-2 mb-16 bg-opacity-0 rounded-full"
           src={front}
           alt="Imagen"
         />
