@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import OpenButton from "./OpenButton.jsx";
 import RepoButton from "./RepoButton.jsx";
 import TechBalloon from "./TechBalloon.jsx";
 
@@ -20,12 +20,12 @@ const Card = ({ title, description, images, tech, repoLink, renderLink }) => {
   };
 
   return (
-    <div>
-      <section
-        className="max-w-sm m-2 bg-white border border-gray-200 rounded-[50px] shadow-lg"
-        onMouseEnter={handleHover}
-        onMouseLeave={handleLeave}
-      >
+    <section
+      className="max-w-sm m-2 bg-white border border-gray-200 rounded-[50px] shadow-lg"
+      onMouseEnter={handleHover}
+      onMouseLeave={handleLeave}
+    >
+      <Link to={renderLink} target="_blank" rel="noopener noreferrer">
         <img
           className="rounded-lg object-cover px-4 pt-4"
           src={
@@ -33,7 +33,7 @@ const Card = ({ title, description, images, tech, repoLink, renderLink }) => {
           }
           alt={`Imagen de ${title}`}
         />
-        <div className="p-5">
+        <div className="px-5">
           <h5 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
             {title}
           </h5>
@@ -45,14 +45,14 @@ const Card = ({ title, description, images, tech, repoLink, renderLink }) => {
               ? tech.map((t, index) => <TechBalloon key={index} tech={t} />)
               : null}
           </div>
-          <div className="flex justify-end">
-            <RepoButton repoLink={repoLink} />
-            <OpenButton renderLink={renderLink} />
-          </div>
         </div>
-      </section>
-    </div>
+        <div className="flex justify-end py-3 pe-5">
+          <RepoButton repoLink={repoLink} />
+        </div>
+      </Link>
+    </section>
   );
 };
 
 export default Card;
+

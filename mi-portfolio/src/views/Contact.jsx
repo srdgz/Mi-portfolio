@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-md md:max-w-2xl mx-auto md:mt-18 p-6 py-18 sm:py-24">
+    <div className="flex flex-col h-screen max-w-md md:max-w-2xl mx-auto p-6 py-18">
       <Link to="/">
         <i className="fa-solid fa-arrow-left fa-lg text-gray-800 my-10"></i>
       </Link>
@@ -140,3 +140,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

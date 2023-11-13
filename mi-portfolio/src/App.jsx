@@ -3,8 +3,6 @@ import { Toaster } from "react-hot-toast";
 
 import BlurBg from "./components/BlurBg.jsx";
 
-import "./App.css";
-
 function App() {
   return (
     <>
