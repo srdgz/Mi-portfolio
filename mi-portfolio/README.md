@@ -14,5 +14,5 @@ Proporciona enlaces a perfiles de redes sociales y otras plataformas relevantes.
 
 # Connect with me:
 
-[<img src="./img/linkedin.png" width="30" height="30">](www.linkedin.com/in/sandra-rodriguez-reyes)
-[<img src="./img/email.png" width="40" height="40">](mailto:rreyes.sandra@gmail.com)
+[<img src="./src/assets/LinkedinIcono.png" width="30" height="30">](www.linkedin.com/in/sandra-rodriguez-reyes)
+[<img src="./src/assets/EmailIcono.png" width="30" height="30">](mailto:rreyes.sandra@gmail.com)
