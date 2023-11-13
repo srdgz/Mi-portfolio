@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 
 const NavLink = ({ to, onClick, children }) => {
-  const isActive = useLocation().pathname === to;
+  const location = useLocation();
+  const isActive = location.pathname === to;
   const hoverColorClass = isActive ? "text-blue-400" : "hover:text-blue-400";
   return (
     <Link
