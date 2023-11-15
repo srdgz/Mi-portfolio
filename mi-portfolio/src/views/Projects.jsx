@@ -54,8 +54,9 @@ const Projects = () => {
             "JavaScript",
             "React",
             "Bootstrap",
-            "Python",
-            "Flask",
+            "Node",
+            "Express",
+            "Prisma",
             "PostgreSQL",
           ]}
           repoLink={"hhttps://github.com/srdgz/cookies-front"}
