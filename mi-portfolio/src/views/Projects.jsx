@@ -58,8 +58,8 @@ const Projects = () => {
             "Flask",
             "PostgreSQL",
           ]}
-          repoLink={"https://github.com/srdgz/CookiesAndCream.git"}
-          renderLink="https://cookies-six-beta.vercel.app/"
+          repoLink={"hhttps://github.com/srdgz/cookies-front"}
+          renderLink="https://cookies-front-pied.vercel.app/"
         />
       </div>
     </div>
@@ -67,4 +67,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
