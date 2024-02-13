@@ -47,6 +47,20 @@ const About = () => {
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
         <li className="mb-4">
+          Full Stack developer
+          <p>
+            Desarrollo y mantenimiento de website utilizando las siguientes
+            tecnologías:
+            <br />
+            <strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJS y Tailwind
+            CSS.
+            <br />
+            <strong>Extras:</strong> conexión con servicio para el envío de
+            emails e integración con servicio externo de reservas online.
+          </p>
+          <p>2023</p>
+        </li>
+        <li className="mb-4">
           Agente de viajes en cntravel
           <p>
             Gestión de la operativa especial CAM para +55 años y contratación de
@@ -77,7 +91,7 @@ const About = () => {
       </ul>
       <div className="flex justify-end mt-10 mb-32">
         <a
-          href="https://drive.google.com/file/d/1Mez6l7O3ed6mlKBUZkwRVyNg9DVZ7sZD/view?usp=drive_link"
+          href="https://drive.google.com/file/d/106sXJlBUav5itJHTMcKcxiQqAaLX7d1g/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-4 py-2 bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
