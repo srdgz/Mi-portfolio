@@ -7,18 +7,18 @@ const HomePage = () => {
     <div className="flex flex-col h-screen md:flex-row items-center justify-center">
       <div className="w-full h-screen md:w-1/2 flex items-center justify-center">
         <div className="text-center text-gray-800 p-6">
-          <h1 className="text-2xl md:text-4xl font-bold mb-6">¡Hey! 👋🏻 </h1>
-          <h2 className="text-xl md:text-2xl font-semibold mb-4">
-            ¡Bienvenid@ a mi portfolio!
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">¡Hola! 👋🏻 </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            ¡Bienvenid@ a mi porfolio!
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-500 mb-1">
+          <p className="text-xl md:text-2xl text-gray-500 mb-1">
             Soy Sandra,{" "}
-            <span className="text-lg md:text-xl mb-2 text-blue-500">
+            <span className="text-xl md:text-2xl mb-2 text-blue-500">
               Full-Stack Software Developer
             </span>
           </p>
-          <p className="text-md md:text-lg text-gray-500 mx-16">
+          <p className="text-lg md:text-xl text-gray-500 lg:mx-32">
             Me gusta el código limpio y crear diseños simples e intuitivos, pero
             que a su vez no pasen desapercibidos.
           </p>
@@ -44,4 +44,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
