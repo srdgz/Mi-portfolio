@@ -46,7 +46,7 @@ const Card = ({ title, description, images, tech, repoLink, renderLink }) => {
               : null}
           </div>
         </div>
-        <div className="flex justify-end py-3 pe-5">
+        <div className="justify-end py-5 pe-5">
           <RepoButton repoLink={repoLink} />
         </div>
       </Link>
@@ -55,4 +55,3 @@ const Card = ({ title, description, images, tech, repoLink, renderLink }) => {
 };
 
 export default Card;
-

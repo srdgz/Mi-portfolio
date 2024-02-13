@@ -104,7 +104,7 @@ const Contact = () => {
             className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none"
             type="email"
             name="email"
-            placeholder="you@email.com"
+            placeholder="tu@email.com"
             value={email}
             onChange={handleChange}
             required
@@ -120,7 +120,7 @@ const Contact = () => {
           <textarea
             className="w-full h-24 px-3 py-2 text-gray-700 border rounded-md focus:outline-none"
             name="message"
-            placeholder="Escribe tu mensaje para Sandra"
+            placeholder="Escribe tu mensaje"
             value={message}
             onChange={handleChange}
             required
@@ -140,4 +140,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

@@ -6,11 +6,13 @@ import WeatherDesktop from "../assets/projects/WeatherDesktop.png";
 import WeatherMobile from "../assets/projects/WeatherMobile.png";
 import CookiesDesktop from "../assets/projects/CookiesDesktop.png";
 import CookiesMobile from "../assets/projects/CookiesMobile.png";
+import SmartStayDesktop from "../assets/projects/SmartStayDesktop.png";
+import SmartStayMobile from "../assets/projects/SmartStayMobile.png";
 
 const Projects = () => {
   const weatherTodayImages = [WeatherDesktop, WeatherMobile];
   const roomieConnectImages = [RoomiesDesktop, RoomiesMobile];
-
+  const smartStayImages = [SmartStayDesktop, SmartStayMobile];
   const cookiesImages = [CookiesDesktop, CookiesMobile];
 
   return (
@@ -27,8 +29,8 @@ const Projects = () => {
             "HTML",
             "CSS",
             "JavaScript",
-            "React",
-            "Tailwind",
+            "ReactJS",
+            "Tailwind CSS",
             "PostgreSQL",
             "Python",
             "Flask",
@@ -37,12 +39,21 @@ const Projects = () => {
           renderLink={"https://roomieconnect-ixr3.onrender.com/"}
         />
         <Card
-          title="WeatherToday"
-          description="Consulta el pronóstico del tiempo en cualquier lugar del mundo."
-          images={weatherTodayImages}
-          tech={["HTML", "CSS", "JavaScript", "React", "Bootstrap"]}
-          repoLink={"https://github.com/srdgz/React-WeatherToday"}
-          renderLink="https://weather-today-steel.vercel.app/"
+          title="SmartStay"
+          description="Reserva de habitaciones de hotel usando Stripe como método de pago. Añade reviews, gestiona y controla tus reservas desde tu panel de usuario."
+          images={smartStayImages}
+          tech={[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS",
+            "NextJS",
+            "Tailwind CSS",
+            "SanityIO",
+            "Stripe",
+          ]}
+          repoLink={"https://github.com/srdgz/smartstay"}
+          renderLink={"https://smartstay.vercel.app/"}
         />
         <Card
           title="Cookies & Cream"
@@ -52,15 +63,30 @@ const Projects = () => {
             "HTML",
             "CSS",
             "JavaScript",
-            "React",
+            "ReactJS",
             "Bootstrap",
-            "Node",
+            "NodeJS",
             "Express",
             "Prisma",
             "PostgreSQL",
           ]}
           repoLink={"hhttps://github.com/srdgz/cookies-front"}
           renderLink="https://cookies-front-pied.vercel.app/"
+        />
+        <Card
+          title="WeatherToday"
+          description="Consulta el pronóstico del tiempo de cualquier lugar del mundo gracias a WeatherAPI."
+          images={weatherTodayImages}
+          tech={[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ReactJS",
+            "Bootstrap",
+            "WeatherAPI",
+          ]}
+          repoLink={"https://github.com/srdgz/React-WeatherToday"}
+          renderLink="https://weather-today-steel.vercel.app/"
         />
       </div>
     </div>
