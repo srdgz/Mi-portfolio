@@ -46,8 +46,21 @@ const About = () => {
         Experiencia
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
+      <li className="mb-4">
+          Full Stack developer en Bubbo
+          <p>
+            Desarrollo de la aplicación Bubbo App con React Native, TypeScript y Expo, con el fin de ofrecer una experiencia de usuario fluida y atractiva.
+          <br />
+            En el backend utilizamos AWS, lo cual nos permite mantener y escalar la aplicación de manera eficiente.
+            <br />
+            También hemos implementado un sistema de integración CI/CD para optimizar los procesos de desarrollo.
+            <br />
+            En cuanto a las pruebas de testing, utilizamos Detox, un framework end-to-end, asegurando así la calidad y fiabilidad de la app en todo momento.
+          </p>
+          <p>2024 - Actualidad</p>
+        </li>
         <li className="mb-4">
-          Full Stack developer
+          Full Stack developer en Clidefit
           <p>
             Desarrollo y mantenimiento de website utilizando las siguientes
             tecnologías:
@@ -91,7 +104,7 @@ const About = () => {
       </ul>
       <div className="flex justify-end mt-10 mb-32">
         <a
-          href="https://drive.google.com/file/d/106sXJlBUav5itJHTMcKcxiQqAaLX7d1g/view?usp=sharing"
+          href="https://drive.google.com/file/d/179iGrL3t8Mf-sQVCWiKCnhc4qwEqDREG/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-4 py-2 bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
