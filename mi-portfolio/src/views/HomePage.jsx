@@ -22,16 +22,27 @@ const HomePage = () => {
             Me gusta el código limpio y crear diseños simples e intuitivos, pero
             que a su vez no pasen desapercibidos.
           </p>
+          <div className="flex justify-center space-x-4 mt-4">
           <Link to="/contact">
             <button
               type="button"
-              className="rounded-full px-3.5 py-2.5 mt-4 text-md font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
+              className="rounded-full px-4 py-2 text-md font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
             >
               ¡Contacta conmigo!
             </button>
           </Link>
+          <a
+            href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-4 py-2 text-md font-bold bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
+          >
+            Descargar CV
+            <i className="fa-solid fa-cloud-arrow-down fa-md ms-2"></i>
+          </a>
         </div>
       </div>
+    </div>
       <div className="w-80 h-80 md:w-1/2 flex items-center justify-center">
         <img
           className="object-cover ms-2 me-2 mb-16 bg-opacity-0 rounded-full"
