@@ -6,7 +6,7 @@ const Footer = () => {
       <hr className="border-t border-gray-300 max-w-3xl mx-auto" />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between">
         <span className="text-sm text-gray-800 sm:text-center flex items-center mb-2 sm:mb-0">
-          © 2023 | Web realizada con
+          © 2024 | Web realizada con
           <img
             src={react}
             alt="React"
