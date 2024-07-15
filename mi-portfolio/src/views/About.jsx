@@ -10,7 +10,7 @@ const About = () => {
         casos la atención al detalle y la rigurosidad no son solo valiosas sino
         necesarias para hacer un buen trabajo. Apoyada en esto y en mis ganas de
         aprender, he llegado a desarrollar proyectos no solo funcionales, sino
-        visualmente atractivos y tecnológicamente modernos, cosas que considero
+        visualmente atractivos y tecnológicamente modernos, aspectos que considero
         son fundamentales para el desarrollo de software de hoy en día. Sigo
         aprendiendo cada día para hacer mi trabajo lo mejor posible y no me
         conformo con hacer un buen trabajo, persigo la excelencia y soy
@@ -27,17 +27,17 @@ const About = () => {
       </h2>
       <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-4">
         <li className="mb-4">
-          Full Stack Software Development
+        <strong>Full Stack Software Development</strong>
           <p>4Geeks Academy</p>
           <p>2023</p>
         </li>
         <li className="mb-4">
-          Máster en formación del profesorado en E.S.O. y Bachillerato
+        <strong>Máster en formación del profesorado en E.S.O. y Bachillerato</strong>
           <p>Universidad de Extremadura</p>
           <p>2011</p>
         </li>
         <li className="mb-4">
-          Licenciatura en Historia, Historia Antigua y Arqueología
+        <strong>Licenciatura en Historia, Historia Antigua y Arqueología</strong>
           <p>Universidad Autónoma de Madrid</p>
           <p>2008</p>
         </li>
@@ -47,64 +47,41 @@ const About = () => {
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
       <li className="mb-4">
-          Full Stack developer en Bubbo
+      <strong>Full Stack developer en Bubbo</strong> · Enero 2024 - Actualidad
           <p>
-            Desarrollo de la aplicación Bubbo App con React Native, TypeScript y Expo, con el fin de ofrecer una experiencia de usuario fluida y atractiva.
-          <br />
-            En el backend utilizamos AWS, lo cual nos permite mantener y escalar la aplicación de manera eficiente.
+            Desarrollo de la aplicación móvil Bubbo TV con React Native, TypeScript y Expo tanto para iOS como Android, con el fin de ofrecer una experiencia de usuario fluida y atractiva.
+            <br />
+            En el backend utilizamos Python y AWS, lo cual nos permite mantener y escalar la aplicación de manera eficiente.
             <br />
             También hemos implementado un sistema de integración CI/CD para optimizar los procesos de desarrollo.
             <br />
             En cuanto a las pruebas de testing, utilizamos Detox, un framework end-to-end, asegurando así la calidad y fiabilidad de la app en todo momento.
           </p>
-          <p>2024 - Actualidad</p>
         </li>
         <li className="mb-4">
-          Full Stack developer en Clidefit
+        <strong>Full Stack developer en Clidefit</strong> · Octubre - Diciembre 2023
           <p>
-            Desarrollo y mantenimiento de website utilizando las siguientes
-            tecnologías:
+            Desarrollo y mantenimiento de website utilizando tecnologías modernas como React.js y Tailwind CSS, para asegurar una experiencia de usuario fluida y atractiva.
             <br />
-            <strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJS y Tailwind
-            CSS.
+            Integré un servicio de envío de emails para facilitar la comunicación con los usuarios. Esto incluyó el manejo de formularios de contacto y la automatización de respuestas, mejorando la eficiencia de las comunicaciones.
             <br />
-            <strong>Extras:</strong> conexión con servicio para el envío de
-            emails e integración con servicio externo de reservas online.
+            También implementé una solución para gestionar la reserva de cita en línea, integrando un servicio externo. Esto permite a los usuarios hacer reservas directamente desde el sitio web, ofreciendo una experiencia sin complicaciones y mejorando la funcionalidad del sitio.
           </p>
-          <p>2023</p>
         </li>
         <li className="mb-4">
-          Agente de viajes en cntravel
+        <strong>Agente de viajes en CN Travel</strong> · Enero 2018 - Junio 2023
           <p>
-            Gestión de la operativa especial CAM para +55 años y contratación de
-            servicios para viajes en grupo de circuitos culturales.
+            Contratación de servicios para viajes en grupo de +40 personas de circuitos culturales, incluyendo traslados, entradas y reservas en general.
+            <br />
+            Gestión de la operativa especial CAM para adultos de +55 años para las agencias Viajes El Corte Inglés, Nautalia Viajes, Viajes Cibeles y Caminos 6.0, tanto de rutas en península como en islas.
+            <br />
+            Coordinación con proveedores de servicios y resolución de problemas en tiempo real.
           </p>
-          <p>2018/2023</p>
-        </li>
-        <li className="mb-4">
-          Área de Postventa en BQ
-          <p>
-            Desempeño de diferentes roles dentro del área de postventa, desde
-            soporte técnico de N1 hasta Responsable de Call Center supervisando
-            a más de 40 personas, hasta Responsable de Calidad en Atención al
-            Cliente.
-          </p>
-          <p>2013/2016</p>
-        </li>
-        <li className="mb-4">
-          Arqueóloga para U.T.E. Santa Lucía {"(Ferrovial - Magenta - Cadagua)"}
-          <p>
-            Dirección de prospección arqueólogica para la instalación de 120km
-            de tubería de agua en la provincia de Cáceres, documentando y
-            registrando los hallazgos arqueológicos y realizando los
-            correspondientes informes arqueológicos.
-          </p>
-          <p>2011/2013</p>
         </li>
       </ul>
       <div className="flex justify-end mt-10 mb-32">
         <a
-          href="https://drive.google.com/file/d/179iGrL3t8Mf-sQVCWiKCnhc4qwEqDREG/view?usp=sharing"
+          href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-4 py-2 bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
