@@ -1,3 +1,15 @@
+import react from "../assets/react.png";
+import next from "../assets/next.png";
+import typescript from "../assets/typescript.png";
+import tailwind from "../assets/tailwind.png";
+import bootstrap from "../assets/bootstrap.png";
+import python from "../assets/python.png";
+import flask from "../assets/flask.png";
+import node from "../assets/node.png";
+import postgre from "../assets/postgre.png";
+import jest from "../assets/jest.png";
+import aws from "../assets/aws.png";
+
 const About = () => {
   return (
     <div className="max-w-md md:max-w-4xl mx-auto mt-8 md:mt-18 p-6">
@@ -23,23 +35,41 @@ const About = () => {
         próximo proyecto.
       </p>
       <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
-        Formación
+        Stack
       </h2>
-      <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-4">
-        <li className="mb-4">
-        <strong>Full Stack Software Development</strong>
-          <p>4Geeks Academy</p>
-          <p>2023</p>
+      <ul className="flex justify-end items-center list-none text-sm md:text-lg text-gray-500 mb-4 space-x-4">
+        <li className="flex items-center">
+          <img src={react} alt="ReactJS" className="h-8 md:h-10" />
         </li>
-        <li className="mb-4">
-        <strong>Máster en formación del profesorado en E.S.O. y Bachillerato</strong>
-          <p>Universidad de Extremadura</p>
-          <p>2011</p>
+        <li className="flex items-center">
+          <img src={next} alt="NextJS" className="h-8 md:h-10" />
         </li>
-        <li className="mb-4">
-        <strong>Licenciatura en Historia, Historia Antigua y Arqueología</strong>
-          <p>Universidad Autónoma de Madrid</p>
-          <p>2008</p>
+        <li className="flex items-center">
+          <img src={typescript} alt="TypeScript" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={tailwind} alt="Tailwind CSS" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={bootstrap} alt="Bootstrap" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={node} alt="NodeJS" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={python} alt="Python" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={flask} alt="Flask" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={postgre} alt="PostgreSQL" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={aws} alt="AWS" className="h-8 md:h-10" />
+        </li>
+        <li className="flex items-center">
+          <img src={jest} alt="Jest" className="h-8 md:h-10" />
         </li>
       </ul>
       <h2 className="text-xl md:text-2xl mb-6 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
@@ -79,7 +109,27 @@ const About = () => {
           </p>
         </li>
       </ul>
-      <div className="flex justify-end mt-10 mb-32">
+      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
+        Formación
+      </h2>
+      <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-4">
+        <li className="mb-4">
+        <strong>Full Stack Software Development</strong>
+          <p>4Geeks Academy</p>
+          <p>2023</p>
+        </li>
+        <li className="mb-4">
+        <strong>Máster en formación del profesorado en E.S.O. y Bachillerato</strong>
+          <p>Universidad de Extremadura</p>
+          <p>2011</p>
+        </li>
+        <li className="mb-4">
+        <strong>Licenciatura en Historia, Historia Antigua y Arqueología</strong>
+          <p>Universidad Autónoma de Madrid</p>
+          <p>2008</p>
+        </li>
+      </ul>
+      <div className="flex justify-end mt-20 mb-28">
         <a
           href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
           target="_blank"
