@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import front from "../assets/front.png";
+import codeSnap from "../assets/codeSnap.png";
 
 const HomePage = () => {
   return (
@@ -18,34 +19,39 @@ const HomePage = () => {
               Full-Stack Software Developer
             </span>
           </p>
-          <p className="text-lg md:text-xl text-gray-500 lg:mx-32">
+          <p className="text-lg md:text-xl text-gray-500 text-center lg:mx-32">
             Me gusta el código limpio y crear diseños simples e intuitivos, pero
             que a su vez no pasen desapercibidos.
           </p>
           <div className="flex justify-center space-x-4 mt-4">
-          <Link to="/contact">
-            <button
-              type="button"
-              className="rounded-full px-4 py-2 text-md font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
+            <Link to="/contact">
+              <button
+                type="button"
+                className="rounded-full px-4 py-2 text-sm md:text-md font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
+              >
+                ¡Contacta conmigo!
+              </button>
+            </Link>
+            <a
+              href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 text-sm md:text-md font-bold bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
             >
-              ¡Contacta conmigo!
-            </button>
-          </Link>
-          <a
-            href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-4 py-2 text-md font-bold bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
-          >
-            Descargar CV
-            <i className="fa-solid fa-cloud-arrow-down fa-md ms-2"></i>
-          </a>
+              Descargar CV
+              <i className="fa-solid fa-cloud-arrow-down fa-md ms-2"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-      <div className="w-80 h-80 md:w-1/2 flex items-center justify-center">
+      <div className="lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center">
         <img
-          className="object-cover ms-2 me-2 mb-16 bg-opacity-0 rounded-full"
+          className="invisible lg:visible relative object-cover shadow-lg md:w-3/4 md:h-auto rounded-[20px]"
+          src={codeSnap}
+          alt="CodeSnap"
+        />
+        <img
+          className="mb-16 mr-72 lg:absolute lg:w-1/4 lg:h-auto lg:-right-64 lg:-top-14 xl:-top-24 2xl:-top-48 rounded-full object-cover bg-opacity-0"
           src={front}
           alt="Imagen"
         />
@@ -55,3 +61,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
