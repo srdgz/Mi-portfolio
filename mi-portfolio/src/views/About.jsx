@@ -1,5 +1,5 @@
 import react from "../assets/react.png";
-import javascript from "../assets/javascript.png";
+import javascript from "../assets/JavaScript.png";
 import next from "../assets/next.png";
 import typescript from "../assets/typescript.png";
 import tailwind from "../assets/tailwind.png";
