@@ -1,4 +1,5 @@
 import react from "../assets/react.png";
+import javascript from "../assets/javascript.png";
 import next from "../assets/next.png";
 import typescript from "../assets/typescript.png";
 import tailwind from "../assets/tailwind.png";
@@ -37,7 +38,10 @@ const About = () => {
       <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
         Stack
       </h2>
-      <ul className="flex justify-end items-center list-none text-sm md:text-lg text-gray-500 mb-4 space-x-4">
+      <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8">
+      <li className="flex items-center">
+          <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
+        </li>
         <li className="flex items-center">
           <img src={react} alt="ReactJS" className="h-8 md:h-10" />
         </li>
@@ -98,7 +102,7 @@ const About = () => {
             También implementé una solución para gestionar la reserva de cita en línea, integrando un servicio externo. Esto permite a los usuarios hacer reservas directamente desde el sitio web, ofreciendo una experiencia sin complicaciones y mejorando la funcionalidad del sitio.
           </p>
         </li>
-        <li className="mb-4">
+        <li className="mb-8">
         <strong>Agente de viajes en CN Travel</strong> · Enero 2018 - Junio 2023
           <p>
             Contratación de servicios para viajes en grupo de +40 personas de circuitos culturales, incluyendo traslados, entradas y reservas en general.
@@ -112,7 +116,7 @@ const About = () => {
       <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
         Formación
       </h2>
-      <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-4">
+      <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-8">
         <li className="mb-4">
         <strong>Full Stack Software Development</strong>
           <p>4Geeks Academy</p>
@@ -129,7 +133,7 @@ const About = () => {
           <p>2008</p>
         </li>
       </ul>
-      <div className="flex justify-end mt-20 mb-28">
+      <div className="flex justify-end mt-20 mb-20">
         <a
           href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
           target="_blank"
