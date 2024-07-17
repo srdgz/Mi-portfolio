@@ -1,3 +1,5 @@
+import DownloadCvButton from "../components/DownloadCvButton";
+
 import react from "../assets/react.png";
 import javascript from "../assets/JavaScript.png";
 import next from "../assets/next.png";
@@ -124,15 +126,10 @@ const About = () => {
         </li>
       </ul>
       <div className="flex justify-end mt-20 mb-20">
-        <a
-          href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-4 py-2 bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
-        >
-          Descargar CV
-          <i className="fa-solid fa-cloud-arrow-down fa-md ms-2"></i>
-        </a>
+      <DownloadCvButton 
+        href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing" 
+        text="Descargar CV" 
+      />
       </div>
     </div>
   );
