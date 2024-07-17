@@ -7,24 +7,22 @@ import codeSnap from "../assets/codeSnap.png";
 const HomePage = () => {
   return (
     <div className="flex flex-col h-screen md:flex-row items-center justify-center">
-      <div className="w-full h-screen md:w-1/2 flex items-center justify-center">
-        <div className="text-center text-gray-800 p-6">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">¡Hola! 👋🏻 </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+      <div className="w-full h-screen md:w-1/2 flex items-center justify-center xl:px-32">
+        <div className="text-start text-gray-800 p-10">
+          <h1 className="text-3xl md:text-5xl text-gray-800 font-bold mb-6">
             ¡Bienvenid@ a mi porfolio!
-          </h2>
-
+          </h1>
           <p className="text-xl md:text-2xl text-gray-500 mb-1">
             Soy Sandra,{" "}
             <span className="text-xl md:text-2xl mb-2 text-blue-500">
               Full-Stack Software Developer
             </span>
           </p>
-          <p className="text-lg md:text-xl text-gray-500 text-center lg:mx-32">
+          <p className="text-lg md:text-xl text-gray-500">
             Me gusta el código limpio y crear diseños simples e intuitivos, pero
             que a su vez no pasen desapercibidos.
           </p>
-          <div className="flex justify-center space-x-4 mt-4">
+          <div className="flex justify-start space-x-4 mt-4">
             <Link to="/contact">
               <button
                 type="button"
