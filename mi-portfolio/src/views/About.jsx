@@ -92,7 +92,7 @@ const About = () => {
             En cuanto a las pruebas de testing, utilizamos Detox, un framework end-to-end, asegurando así la calidad y fiabilidad de la app en todo momento.
           </p>
         </li>
-        <li className="mb-4">
+        <li className="mb-8">
         <strong>Full Stack developer en Clidefit</strong> · Octubre - Diciembre 2023
           <p>
             Desarrollo y mantenimiento de website utilizando tecnologías modernas como React.js y Tailwind CSS, para asegurar una experiencia de usuario fluida y atractiva.
@@ -100,16 +100,6 @@ const About = () => {
             Integré un servicio de envío de emails para facilitar la comunicación con los usuarios. Esto incluyó el manejo de formularios de contacto y la automatización de respuestas, mejorando la eficiencia de las comunicaciones.
             <br />
             También implementé una solución para gestionar la reserva de cita en línea, integrando un servicio externo. Esto permite a los usuarios hacer reservas directamente desde el sitio web, ofreciendo una experiencia sin complicaciones y mejorando la funcionalidad del sitio.
-          </p>
-        </li>
-        <li className="mb-8">
-        <strong>Agente de viajes en CN Travel</strong> · Enero 2018 - Junio 2023
-          <p>
-            Contratación de servicios para viajes en grupo de +40 personas de circuitos culturales, incluyendo traslados, entradas y reservas en general.
-            <br />
-            Gestión de la operativa especial CAM para adultos de +55 años para las agencias Viajes El Corte Inglés, Nautalia Viajes, Viajes Cibeles y Caminos 6.0, tanto de rutas en península como en islas.
-            <br />
-            Coordinación con proveedores de servicios y resolución de problemas en tiempo real.
           </p>
         </li>
       </ul>
