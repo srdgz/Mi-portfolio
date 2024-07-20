@@ -7,7 +7,7 @@ import codeSnap from "../assets/codeSnap.png";
 const HomePage = () => {
   return (
     <div className="flex flex-col h-screen md:flex-row items-center justify-center">
-      <div className="w-full h-screen md:w-1/2 flex items-center justify-center xl:px-32">
+      <div className="w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28">
         <div className="text-start text-gray-800 p-10">
           <h1 className="text-3xl md:text-5xl text-gray-800 font-bold mb-6">
             ¡Bienvenid@ a mi porfolio!
@@ -26,14 +26,14 @@ const HomePage = () => {
             <Link to="/contact">
               <button
                 type="button"
-                className="rounded-full px-4 py-2 text-sm md:text-md font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
+                className="rounded-full px-2 lg:px-4 py-2 text-sm md:text-md text-center font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
               >
                 ¡Contacta conmigo!
               </button>
             </Link>
-            <DownloadCvButton 
-              href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing" 
-              text="Descargar CV" 
+            <DownloadCvButton
+              href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
+              text="Descargar CV"
             />
           </div>
         </div>
@@ -55,4 +55,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-

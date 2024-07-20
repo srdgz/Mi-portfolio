@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
-// import config from "../../config";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
