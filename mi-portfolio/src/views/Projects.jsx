@@ -8,12 +8,15 @@ import CookiesDesktop from "../assets/projects/CookiesDesktop.png";
 import CookiesMobile from "../assets/projects/CookiesMobile.png";
 import SmartStayDesktop from "../assets/projects/SmartStayDesktop.png";
 import SmartStayMobile from "../assets/projects/SmartStayMobile.png";
+import WallifyDesktop from "../assets/projects/WallifyDesktop.png";
+import WallifyMobile from "../assets/projects/WallifyMobile.png";
 
 const Projects = () => {
   const weatherTodayImages = [WeatherDesktop, WeatherMobile];
   const roomieConnectImages = [RoomiesDesktop, RoomiesMobile];
   const smartStayImages = [SmartStayDesktop, SmartStayMobile];
   const cookiesImages = [CookiesDesktop, CookiesMobile];
+  const wallifyImages = [WallifyDesktop, WallifyMobile];
 
   return (
     <div className="max-w-md md:max-w-4xl mx-auto mt-8 md:mt-18 p-6">
@@ -39,6 +42,14 @@ const Projects = () => {
           renderLink={"https://roomieconnect-ixr3.onrender.com/"}
         />
         <Card
+          title="Wallify"
+          description="Aplicación móvil diseñada para explorar y descargar fondos de pantalla de alta calidad. Los usuarios pueden buscar filtrando las imágenes."
+          images={wallifyImages}
+          tech={["React Native", "TypeScript", "Expo", "Pixabay API"]}
+          repoLink={"https://github.com/srdgz/wallify-app"}
+          renderLink={"https://github.com/srdgz/wallify-app"}
+        />
+        <Card
           title="SmartStay"
           description="Reserva de habitaciones de hotel usando Stripe como método de pago. Añade reviews, gestiona y controla tus reservas desde tu panel de usuario."
           images={smartStayImages}
@@ -57,7 +68,7 @@ const Projects = () => {
         />
         <Card
           title="Cookies & Cream"
-          description="Landing page de una pastelería."
+          description="Landing page de una pastelería ficticia con información sobre sus productos, y tiendas."
           images={cookiesImages}
           tech={[
             "HTML",
