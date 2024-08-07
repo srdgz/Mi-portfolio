@@ -20,22 +20,24 @@ const About = () => {
         Sobre mí
       </h2>
       <p className="text-sm md:text-lg text-gray-500 mb-4">
-        El arte y la historia de mi formación académica pueden parecer muy
-        alejados de la programación y las nuevas tecnologías, pero en ambos
-        casos la atención al detalle y la rigurosidad no son solo valiosas sino
-        necesarias para hacer un buen trabajo. Apoyada en esto y en mis ganas de
-        aprender, he llegado a desarrollar proyectos no solo funcionales, sino
-        visualmente atractivos y tecnológicamente modernos, aspectos que
-        considero son fundamentales para el desarrollo de software de hoy en
-        día. Sigo aprendiendo cada día para hacer mi trabajo lo mejor posible y
-        no me conformo con hacer un buen trabajo, persigo la excelencia y soy
-        proactiva.
+        Mi formación en arte e historia puede parecer distante de la
+        programación y las nuevas tecnologías, pero la atención al detalle y la
+        rigurosidad son esenciales en ambos campos para realizar un buen
+        trabajo. Con estas habilidades y mi pasión por aprender, decidí dar un
+        giro a mi carrera profesional y adentrarme en el mundo del desarrollo
+        web.
+      </p>
+      <p className="text-sm md:text-lg text-gray-500 mb-4">
+        Desde entonces, he desarrollado proyectos que no solo son funcionales,
+        sino también visualmente atractivos y tecnológicamente avanzados,
+        cualidades fundamentales en el desarrollo de software moderno. Continúo
+        aprendiendo cada día para mejorar mi trabajo y disfruto colaborando en
+        equipo, siempre con actitud proactiva y positiva.
       </p>
       <p className="text-sm md:text-lg text-gray-500 mb-8">
         Si estás buscando a alguien que aporte una perspectiva fresca y actual,
-        estaré encantada de discutir cómo mi experiencia puede beneficiar a tu
-        equipo. No dudes en contactarme si crees que puedo ser de ayuda en tu
-        próximo proyecto.
+        no dudes en contactarme si crees que puedo ser de ayuda en tu próximo
+        proyecto.
       </p>
       <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
         Stack
@@ -83,7 +85,7 @@ const About = () => {
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
         <li className="mb-4">
-          <strong>Full Stack developer en Bubbo</strong> · Enero 2024 -
+          <strong>Full-Stack Developer en Bubbo</strong> · Enero 2024 -
           Actualidad
           <p>
             Desarrollo de la aplicación móvil Bubbo TV con React Native,
@@ -93,32 +95,40 @@ const About = () => {
             En el backend utilizamos Python y AWS, lo cual nos permite mantener
             y escalar la aplicación de manera eficiente.
             <br />
+            Implementación de RevenueCat para la gestión de suscripciones de la
+            aplicación, facilitando la compra in-app y la gestión de las
+            suscripciones.
+            <br />
             También hemos implementado un sistema de integración CI/CD para
             optimizar los procesos de desarrollo.
             <br />
             En cuanto a las pruebas de testing, utilizamos Detox, un framework
             end-to-end, asegurando así la calidad y fiabilidad de la app en todo
             momento.
+            <br />
+            Uso colaborativo de GitHub para el control de versiones y la gestión
+            del código, facilitando la colaboración en equipo y la revisión de
+            código
           </p>
         </li>
         <li className="mb-8">
-          <strong>Full Stack developer en Clidefit</strong> · Octubre -
+          <strong>Full-Stack Developer en Clidefit</strong> · Octubre -
           Diciembre 2023
           <p>
             Desarrollo y mantenimiento de website utilizando tecnologías
-            modernas como React.js y Tailwind CSS, para asegurar una experiencia
-            de usuario fluida y atractiva.
+            modernas como React.js y Tailwind CSS para crear un diseño limpio y
+            moderno.
             <br />
-            Integré un servicio de envío de emails para facilitar la
+            Integración de un servicio de envío de emails para facilitar la
             comunicación con los usuarios. Esto incluyó el manejo de formularios
             de contacto y la automatización de respuestas, mejorando la
             eficiencia de las comunicaciones.
             <br />
-            También implementé una solución para gestionar la reserva de cita en
-            línea, integrando un servicio externo. Esto permite a los usuarios
-            hacer reservas directamente desde el sitio web, ofreciendo una
-            experiencia sin complicaciones y mejorando la funcionalidad del
-            sitio.
+            También se implementó una solución para gestionar la reserva de
+            citas en línea, integrando en la web el sistema de reservas que ya
+            tenía la empresa en funcionamiento. Esto permite a los usuarios
+            hacer reservas directamente desde el sitio web, para agilizar y
+            simplificar la experiencia de usuario.
           </p>
         </li>
       </ul>
