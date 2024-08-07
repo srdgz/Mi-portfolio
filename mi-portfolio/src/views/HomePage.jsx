@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import DownloadCvButton from "../components/DownloadCvButton";
 
 import front from "../assets/front.png";
@@ -23,14 +22,14 @@ const HomePage = () => {
             que a su vez no pasen desapercibidos.
           </p>
           <div className="flex justify-start space-x-4 mt-4">
-            <Link to="/contact">
+            <a href="mailto:rreyes.sandra@gmail.com">
               <button
                 type="button"
                 className="rounded-full px-2 lg:px-4 py-2 text-sm md:text-md text-center font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
               >
                 ¡Contacta conmigo!
               </button>
-            </Link>
+            </a>
             <DownloadCvButton
               href="https://drive.google.com/file/d/1sHd9mXUF9M7LOfSI0eMZMQeptQqjUhw8/view?usp=drive_link"
               text="Descargar CV"
