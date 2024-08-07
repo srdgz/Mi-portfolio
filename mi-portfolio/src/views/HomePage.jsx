@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className="w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28">
         <div className="text-start text-gray-800 p-10">
           <h1 className="text-3xl md:text-5xl text-gray-800 font-bold mb-6">
-            ¡Bienvenid@ a mi porfolio!
+            ¡Bienvenid@ a mi portfolio!
           </h1>
           <p className="text-xl md:text-2xl text-gray-500 mb-1">
             Soy Sandra,{" "}
@@ -21,6 +21,24 @@ const HomePage = () => {
             Me gusta el código limpio y crear diseños simples e intuitivos, pero
             que a su vez no pasen desapercibidos.
           </p>
+          <div className="flex space-x-6 mt-4">
+            <a
+              href="https://linkedin.com/in/sandra-rodriguez-reyes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 hover:text-blue-400"
+            >
+              <i className="fab fa-linkedin-in text-3xl"></i>
+            </a>
+            <a
+              href="https://github.com/srdgz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 hover:text-blue-400"
+            >
+              <i className="fab fa-github text-3xl"></i>
+            </a>
+          </div>
           <div className="flex justify-start space-x-4 mt-4">
             <a href="mailto:rreyes.sandra@gmail.com">
               <button
