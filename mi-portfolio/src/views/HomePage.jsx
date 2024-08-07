@@ -32,7 +32,7 @@ const HomePage = () => {
               </button>
             </Link>
             <DownloadCvButton
-              href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing"
+              href="https://drive.google.com/file/d/1sHd9mXUF9M7LOfSI0eMZMQeptQqjUhw8/view?usp=drive_link"
               text="Descargar CV"
             />
           </div>

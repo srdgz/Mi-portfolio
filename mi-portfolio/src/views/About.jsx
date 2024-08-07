@@ -25,10 +25,10 @@ const About = () => {
         casos la atención al detalle y la rigurosidad no son solo valiosas sino
         necesarias para hacer un buen trabajo. Apoyada en esto y en mis ganas de
         aprender, he llegado a desarrollar proyectos no solo funcionales, sino
-        visualmente atractivos y tecnológicamente modernos, aspectos que considero
-        son fundamentales para el desarrollo de software de hoy en día. Sigo
-        aprendiendo cada día para hacer mi trabajo lo mejor posible y no me
-        conformo con hacer un buen trabajo, persigo la excelencia y soy
+        visualmente atractivos y tecnológicamente modernos, aspectos que
+        considero son fundamentales para el desarrollo de software de hoy en
+        día. Sigo aprendiendo cada día para hacer mi trabajo lo mejor posible y
+        no me conformo con hacer un buen trabajo, persigo la excelencia y soy
         proactiva.
       </p>
       <p className="text-sm md:text-lg text-gray-500 mb-8">
@@ -41,7 +41,7 @@ const About = () => {
         Stack
       </h2>
       <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8">
-      <li className="flex items-center">
+        <li className="flex items-center">
           <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
         </li>
         <li className="flex items-center">
@@ -82,26 +82,43 @@ const About = () => {
         Experiencia
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
-      <li className="mb-4">
-      <strong>Full Stack developer en Bubbo</strong> · Enero 2024 - Actualidad
+        <li className="mb-4">
+          <strong>Full Stack developer en Bubbo</strong> · Enero 2024 -
+          Actualidad
           <p>
-            Desarrollo de la aplicación móvil Bubbo TV con React Native, TypeScript y Expo tanto para iOS como Android, con el fin de ofrecer una experiencia de usuario fluida y atractiva.
+            Desarrollo de la aplicación móvil Bubbo TV con React Native,
+            TypeScript y Expo tanto para iOS como Android, con el fin de ofrecer
+            una experiencia de usuario fluida y atractiva.
             <br />
-            En el backend utilizamos Python y AWS, lo cual nos permite mantener y escalar la aplicación de manera eficiente.
+            En el backend utilizamos Python y AWS, lo cual nos permite mantener
+            y escalar la aplicación de manera eficiente.
             <br />
-            También hemos implementado un sistema de integración CI/CD para optimizar los procesos de desarrollo.
+            También hemos implementado un sistema de integración CI/CD para
+            optimizar los procesos de desarrollo.
             <br />
-            En cuanto a las pruebas de testing, utilizamos Detox, un framework end-to-end, asegurando así la calidad y fiabilidad de la app en todo momento.
+            En cuanto a las pruebas de testing, utilizamos Detox, un framework
+            end-to-end, asegurando así la calidad y fiabilidad de la app en todo
+            momento.
           </p>
         </li>
         <li className="mb-8">
-        <strong>Full Stack developer en Clidefit</strong> · Octubre - Diciembre 2023
+          <strong>Full Stack developer en Clidefit</strong> · Octubre -
+          Diciembre 2023
           <p>
-            Desarrollo y mantenimiento de website utilizando tecnologías modernas como React.js y Tailwind CSS, para asegurar una experiencia de usuario fluida y atractiva.
+            Desarrollo y mantenimiento de website utilizando tecnologías
+            modernas como React.js y Tailwind CSS, para asegurar una experiencia
+            de usuario fluida y atractiva.
             <br />
-            Integré un servicio de envío de emails para facilitar la comunicación con los usuarios. Esto incluyó el manejo de formularios de contacto y la automatización de respuestas, mejorando la eficiencia de las comunicaciones.
+            Integré un servicio de envío de emails para facilitar la
+            comunicación con los usuarios. Esto incluyó el manejo de formularios
+            de contacto y la automatización de respuestas, mejorando la
+            eficiencia de las comunicaciones.
             <br />
-            También implementé una solución para gestionar la reserva de cita en línea, integrando un servicio externo. Esto permite a los usuarios hacer reservas directamente desde el sitio web, ofreciendo una experiencia sin complicaciones y mejorando la funcionalidad del sitio.
+            También implementé una solución para gestionar la reserva de cita en
+            línea, integrando un servicio externo. Esto permite a los usuarios
+            hacer reservas directamente desde el sitio web, ofreciendo una
+            experiencia sin complicaciones y mejorando la funcionalidad del
+            sitio.
           </p>
         </li>
       </ul>
@@ -110,26 +127,37 @@ const About = () => {
       </h2>
       <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-8">
         <li className="mb-4">
-        <strong>Full Stack Software Development</strong>
+          <strong>
+            Ciclo superior en desarrollo de aplicaciones web (DAW)
+          </strong>
+          <p>I.E.S. de Teis</p>
+          <p>Inicio: Septiembre 2024</p>
+        </li>
+        <li className="mb-4">
+          <strong>Full Stack Software Development</strong>
           <p>4Geeks Academy</p>
           <p>2023</p>
         </li>
         <li className="mb-4">
-        <strong>Máster en formación del profesorado en E.S.O. y Bachillerato</strong>
+          <strong>
+            Máster en formación del profesorado en E.S.O. y Bachillerato
+          </strong>
           <p>Universidad de Extremadura</p>
           <p>2011</p>
         </li>
         <li className="mb-4">
-        <strong>Licenciatura en Historia, Historia Antigua y Arqueología</strong>
+          <strong>
+            Licenciatura en Historia, Historia Antigua y Arqueología
+          </strong>
           <p>Universidad Autónoma de Madrid</p>
           <p>2008</p>
         </li>
       </ul>
       <div className="flex justify-end mt-20 mb-20">
-      <DownloadCvButton 
-        href="https://drive.google.com/file/d/1TQWLDScuQ2tiBuUQZHGzL7cDPlc58Pjc/view?usp=sharing" 
-        text="Descargar CV" 
-      />
+        <DownloadCvButton
+          href="https://drive.google.com/file/d/1sHd9mXUF9M7LOfSI0eMZMQeptQqjUhw8/view?usp=drive_link"
+          text="Descargar CV"
+        />
       </div>
     </div>
   );
