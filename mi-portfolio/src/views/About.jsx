@@ -116,7 +116,7 @@ const About = () => {
           Diciembre 2023
           <p>
             Desarrollo y mantenimiento de website utilizando tecnologías
-            modernas como React.js y Tailwind CSS para crear un diseño limpio y
+            modernas como React y Tailwind CSS para crear un diseño limpio y
             moderno.
             <br />
             Integración de un servicio de envío de emails para facilitar la
