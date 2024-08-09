@@ -48,10 +48,7 @@ const HomePage = () => {
                 ¡Contacta conmigo!
               </button>
             </a>
-            <DownloadCvButton
-              href="https://drive.google.com/file/d/1sHd9mXUF9M7LOfSI0eMZMQeptQqjUhw8/view?usp=drive_link"
-              text="Descargar CV"
-            />
+            <DownloadCvButton />
           </div>
         </div>
       </div>

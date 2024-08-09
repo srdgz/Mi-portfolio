@@ -164,10 +164,7 @@ const About = () => {
         </li>
       </ul>
       <div className="flex justify-end mt-20 mb-20">
-        <DownloadCvButton
-          href="https://drive.google.com/file/d/1sHd9mXUF9M7LOfSI0eMZMQeptQqjUhw8/view?usp=drive_link"
-          text="Descargar CV"
-        />
+        <DownloadCvButton />
       </div>
     </div>
   );
