@@ -2,6 +2,8 @@ import Card from "../components/Card.jsx";
 
 import RoomiesDesktop from "../assets/projects/RoomiesDesktop.png";
 import RoomiesMobile from "../assets/projects/RoomiesMobile.png";
+import FrescaGoDesktop from "../assets/projects/FrescaGoDesktop.png";
+import FrescaGoMobile from "../assets/projects/FrescaGoMobile.png";
 import WeatherDesktop from "../assets/projects/WeatherDesktop.png";
 import WeatherMobile from "../assets/projects/WeatherMobile.png";
 import CookiesDesktop from "../assets/projects/CookiesDesktop.png";
@@ -17,6 +19,7 @@ const Projects = () => {
   const smartStayImages = [SmartStayDesktop, SmartStayMobile];
   const cookiesImages = [CookiesDesktop, CookiesMobile];
   const wallifyImages = [WallifyDesktop, WallifyMobile];
+  const frescagoImages = [FrescaGoDesktop, FrescaGoMobile];
 
   return (
     <div className="max-w-md md:max-w-4xl mx-auto mt-8 md:mt-18 p-6">
@@ -26,7 +29,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-32">
         <Card
           title="RoomieConnect"
-          description="Gestiona las tareas y gastos con tus compañeros de piso."
+          description="Aplicación web para gestionar las tareas y gastos compartidos con tus compañeros de piso."
           images={roomieConnectImages}
           tech={[
             "HTML",
@@ -40,6 +43,25 @@ const Projects = () => {
           ]}
           repoLink={"https://github.com/srdgz/RoomieConnect"}
           renderLink={"https://roomieconnect-ixr3.onrender.com/"}
+        />
+        <Card
+          title="FrescaGo"
+          description="FrescaGo es un e-commerce moderno que ofrece una experiencia de compra en línea completa y fluida."
+          images={frescagoImages}
+          tech={[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Tailwind CSS",
+            "Framer Motion",
+            "NodeJS",
+            "Express",
+            "Firebase",
+            "Stripe",
+          ]}
+          repoLink={"https://github.com/srdgz/frescaGo"}
+          renderLink={"https://frescago.vercel.app/"}
         />
         <Card
           title="Wallify"
@@ -81,7 +103,7 @@ const Projects = () => {
             "Prisma",
             "PostgreSQL",
           ]}
-          repoLink={"hhttps://github.com/srdgz/cookies-front"}
+          repoLink={"https://github.com/srdgz/cookies-front"}
           renderLink="https://cookies-front-pied.vercel.app/"
         />
         <Card
