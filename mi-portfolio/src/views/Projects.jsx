@@ -22,11 +22,11 @@ const Projects = () => {
   const frescagoImages = [FrescaGoDesktop, FrescaGoMobile];
 
   return (
-    <div className="max-w-md md:max-w-4xl mx-auto mt-8 md:mt-18 p-6">
-      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 max-w-4xl mx-auto">
+    <div className="max-w-md md:max-w-4xl lg:max-w-7xl mx-auto mt-8 md:mt-18 p-6">
+      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto">
         Mis últimos proyectos
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-32">
         <Card
           title="RoomieConnect"
           description="Aplicación web para gestionar las tareas y gastos compartidos con tus compañeros de piso."
