@@ -65,7 +65,7 @@ const Projects = () => {
         />
         <Card
           title="Wallify"
-          description="Aplicación móvil diseñada para explorar y descargar fondos de pantalla de alta calidad. Los usuarios pueden buscar filtrando las imágenes."
+          description="Aplicación móvil diseñada para explorar y descargar fondos de pantalla de alta calidad. Los usuarios pueden buscar la imagen que desean utilizando los filtros disponibles sobre formato, color, temática, etc."
           images={wallifyImages}
           tech={["React Native", "TypeScript", "Expo", "Pixabay API"]}
           repoLink={"https://github.com/srdgz/wallify-app"}
@@ -108,7 +108,7 @@ const Projects = () => {
         />
         <Card
           title="WeatherToday"
-          description="Consulta el pronóstico del tiempo de cualquier lugar del mundo gracias a WeatherAPI."
+          description="Consulta el pronóstico del tiempo de cualquier lugar del mundo gracias a WeatherAPI, obteniendo información en tiempo real."
           images={weatherTodayImages}
           tech={[
             "HTML",
