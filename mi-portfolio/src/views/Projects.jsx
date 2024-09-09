@@ -42,7 +42,7 @@ const Projects = () => {
             "Flask",
           ]}
           repoLink={"https://github.com/srdgz/RoomieConnect"}
-          renderLink={"https://roomieconnect-ixr3.onrender.com/"}
+          renderLink={"https://roomieconnect-msl6.onrender.com/"}
         />
         <Card
           title="FrescaGo"
