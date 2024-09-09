@@ -85,8 +85,8 @@ const About = () => {
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
         <li className="mb-4">
-          <strong>Full-Stack Developer en Bubbo</strong> · Enero 2024 -
-          Actualidad
+          <strong>Full-Stack Developer en Bubbo</strong> · Enero - Septiembre
+          2024
           <p>
             Desarrollo de la aplicación móvil Bubbo TV con React Native,
             TypeScript y Expo tanto para iOS como Android, con el fin de ofrecer
@@ -108,7 +108,7 @@ const About = () => {
             <br />
             Uso colaborativo de GitHub para el control de versiones y la gestión
             del código, facilitando la colaboración en equipo y la revisión de
-            código
+            código.
           </p>
         </li>
         <li className="mb-8">
@@ -141,7 +141,7 @@ const About = () => {
             Ciclo superior en desarrollo de aplicaciones web (DAW)
           </strong>
           <p>I.E.S. de Teis</p>
-          <p>Inicio: Septiembre 2024</p>
+          <p>Cursando</p>
         </li>
         <li className="mb-4">
           <strong>Full Stack Software Development</strong>
