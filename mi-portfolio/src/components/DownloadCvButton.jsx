@@ -1,7 +1,7 @@
 const DownloadCvButton = () => {
   return (
     <a
-      href="https://drive.google.com/file/d/1wz3t5GHV9rmnVdxTBzprKyXOAqa-fPc0/view?usp=sharing"
+      href="https://drive.google.com/file/d/1fSQ0ogqfsbp0kZoouBobxS4DpWVYmqkR/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block px-4 py-2 text-sm md:text-md text-center font-bold bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
