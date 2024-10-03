@@ -47,7 +47,7 @@ const About = () => {
           <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
         </li>
         <li className="flex items-center">
-          <img src={react} alt="ReactJS" className="h-8 md:h-10" />
+          <img src={react} alt="React" className="h-8 md:h-10" />
         </li>
         <li className="flex items-center">
           <img src={next} alt="NextJS" className="h-8 md:h-10" />
@@ -112,7 +112,7 @@ const About = () => {
           </p>
         </li>
         <li className="mb-8">
-          <strong>Full-Stack Developer en Clidefit</strong> · Octubre -
+          <strong>Full-Stack Developer en Clidefit</strong> · Septiembre -
           Diciembre 2023
           <p>
             Desarrollo y mantenimiento de website utilizando tecnologías
