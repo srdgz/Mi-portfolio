@@ -18,7 +18,7 @@ const HomePage = () => {
             <p className="text-xl md:text-2xl text-gray-500 mb-1">
               Soy Sandra,{" "}
               <span className="text-xl md:text-2xl mb-2 text-blue-500">
-                Full-Stack Software Developer
+                Desarrolladora Full-Stack
               </span>
             </p>
             <p className="text-lg md:text-xl text-gray-500">
