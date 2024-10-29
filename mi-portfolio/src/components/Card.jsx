@@ -21,7 +21,7 @@ const Card = ({ title, description, images, tech, repoLink, demoLink }) => {
 
   return (
     <section
-      className="flex flex-col max-w-sm m-2 bg-white border border-gray-200 rounded-[50px] shadow-lg"
+      className="flex flex-col max-w-sm m-2 bg-white border border-gray-200 rounded-[50px] shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:border-blue-200 hover:shadow-blue-100"
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
     >
@@ -30,7 +30,7 @@ const Card = ({ title, description, images, tech, repoLink, demoLink }) => {
         src={hovered && images && images.length > 1 ? images[1] : currentImage}
         alt={`Imagen de ${title}`}
       />
-      <div className=" flex-grow px-5">
+      <div className="flex-grow px-5">
         <h5 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
           {title}
         </h5>
