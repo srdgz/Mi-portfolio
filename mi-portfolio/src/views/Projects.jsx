@@ -61,7 +61,7 @@ const Projects = () => {
             "Stripe",
           ]}
           repoLink={"https://github.com/srdgz/frescaGo"}
-          renderLink={"https://frescago.vercel.app/"}
+          demoLink={"https://frescago.vercel.app/"}
         />
         <Card
           title="Wallify"
@@ -69,7 +69,7 @@ const Projects = () => {
           images={wallifyImages}
           tech={["React Native", "TypeScript", "Expo", "Pixabay API"]}
           repoLink={"https://github.com/srdgz/wallify-app"}
-          renderLink={"https://github.com/srdgz/wallify-app"}
+          demoLink={"https://github.com/srdgz/wallify-app"}
         />
         <Card
           title="SmartStay"
@@ -86,7 +86,7 @@ const Projects = () => {
             "Stripe",
           ]}
           repoLink={"https://github.com/srdgz/smartstay"}
-          renderLink={"https://smartstay.vercel.app/"}
+          demoLink={"https://smartstay.vercel.app/"}
         />
         <Card
           title="Cookies & Cream"
@@ -104,7 +104,7 @@ const Projects = () => {
             "PostgreSQL",
           ]}
           repoLink={"https://github.com/srdgz/cookies-front"}
-          renderLink="https://cookies-front-pied.vercel.app/"
+          demoLink="https://cookies-front-pied.vercel.app/"
         />
         <Card
           title="WeatherToday"
@@ -119,7 +119,7 @@ const Projects = () => {
             "WeatherAPI",
           ]}
           repoLink={"https://github.com/srdgz/React-WeatherToday"}
-          renderLink="https://weather-today-steel.vercel.app/"
+          demoLink="https://weather-today-steel.vercel.app/"
         />
       </div>
     </div>
