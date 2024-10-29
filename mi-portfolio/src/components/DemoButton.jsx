@@ -1,14 +1,14 @@
-const RepoButton = ({ repoLink }) => {
+const DemoButton = ({ demoLink }) => {
   return (
     <div className="flex justify-end">
       <button
         className="p-2 bg-blue-400 text-white rounded-[50px] hover:bg-gray-500 focus:outline-none shadow-lg"
-        onClick={() => window.open(repoLink, "_blank", "noopener noreferrer")}
+        onClick={() => window.open(demoLink, "_blank", "noopener noreferrer")}
       >
-        <i className="fa-brands fa-github fa-xl"></i>
+        <i className="fa-solid fa-globe fa-xl"></i>
       </button>
     </div>
   );
 };
 
-export default RepoButton;
+export default DemoButton;
