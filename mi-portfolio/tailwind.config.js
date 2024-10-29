@@ -5,6 +5,8 @@ export default {
     extend: {
       animation: {
         blob: "blob 7s infinite",
+        slideInFromLeft: "slideInFromLeft 1.5s ease-out forwards",
+        slideInFromRight: "slideInFromRight 1.5s ease-out forwards",
       },
       keyframes: {
         blob: {
@@ -20,6 +22,14 @@ export default {
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
           },
+        },
+        slideInFromLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInFromRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
         },
       },
     },

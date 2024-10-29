@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import Heading from "../components/Heading";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
@@ -47,9 +48,9 @@ const Contact = () => {
 
   return (
     <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6 mb-44">
-      <h2 className="text-xl md:text-2xl mb-20 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 mx-auto">
+      <Heading direction="left" className="text-end">
         Contacta conmigo
-      </h2>
+      </Heading>
       <form
         ref={form}
         onSubmit={handleSubmit}
