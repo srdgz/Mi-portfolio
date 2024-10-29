@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
@@ -47,14 +46,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen max-w-md md:max-w-2xl mx-auto p-6 py-18">
-      <Link to="/">
-        <i className="fa-solid fa-arrow-left fa-lg text-gray-800 my-10"></i>
-      </Link>
-      <h1 className="text-2xl mb-6 text-start text-gray-800 font-semibold">
+    <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6 mb-44">
+      <h2 className="text-xl md:text-2xl mb-20 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 mx-auto">
         Contacta conmigo
-      </h1>
-      <form ref={form} onSubmit={handleSubmit}>
+      </h2>
+      <form
+        ref={form}
+        onSubmit={handleSubmit}
+        className="max-w-md md:max-w-2xl mx-auto"
+      >
         <div className="mb-4 flex space-x-4">
           <div className="w-1/2">
             <label

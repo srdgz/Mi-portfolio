@@ -16,7 +16,7 @@ import aws from "../assets/aws.png";
 const About = () => {
   return (
     <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6">
-      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto">
+      <h2 className="text-xl md:text-2xl mb-20 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto">
         Sobre mí
       </h2>
       <p className="text-sm md:text-lg text-gray-500 mb-4">
@@ -39,7 +39,7 @@ const About = () => {
         no dudes en contactarme si crees que puedo ser de ayuda en tu próximo
         proyecto.
       </p>
-      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 mx-auto">
+      <h2 className="text-xl md:text-2xl my-20 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 mx-auto">
         Stack
       </h2>
       <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8">
@@ -116,7 +116,7 @@ const About = () => {
           </span>
         </li>
       </ul>
-      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto">
+      <h2 className="text-xl md:text-2xl my-20 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto">
         Experiencia
       </h2>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
@@ -168,7 +168,7 @@ const About = () => {
           </p>
         </li>
       </ul>
-      <h2 className="text-xl md:text-2xl mb-6 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 mx-auto">
+      <h2 className="text-xl md:text-2xl my-20 pb-2 text-end text-gray-800 font-semibold border-b border-blue-300 mx-auto">
         Formación
       </h2>
       <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-8">
