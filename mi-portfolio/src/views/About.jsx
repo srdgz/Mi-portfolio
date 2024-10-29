@@ -19,23 +19,18 @@ const About = () => {
     <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6">
       <Heading direction="right">Sobre mí</Heading>
       <p className="text-sm md:text-lg text-gray-500 mb-4">
-        Mi formación en arte e historia puede parecer distante de la
-        programación y las nuevas tecnologías, pero la atención al detalle y la
-        rigurosidad son esenciales en ambos campos para realizar un buen
-        trabajo. Con estas habilidades y mi pasión por aprender, decidí dar un
-        giro a mi carrera profesional y adentrarme en el mundo del desarrollo
-        web.
-      </p>
-      <p className="text-sm md:text-lg text-gray-500 mb-4">
-        Desde entonces, he desarrollado proyectos que no solo son funcionales,
-        sino también visualmente atractivos y tecnológicamente avanzados,
-        cualidades fundamentales en el desarrollo de software moderno. Continúo
-        aprendiendo cada día para mejorar mi trabajo y disfruto colaborando en
-        equipo, siempre con actitud proactiva y positiva.
+        He dado un giro a mi carrera profesional hacia el desarrollo web,
+        aprovechando habilidades clave como la atención al detalle y la
+        rigurosidad, esenciales en este campo. Desde entonces, he trabajado en
+        proyectos que no solo son funcionales, sino también visualmente
+        atractivos y tecnológicamente avanzados, características fundamentales
+        en el desarrollo de software moderno.
       </p>
       <p className="text-sm md:text-lg text-gray-500 mb-8">
-        Si estás buscando a alguien que aporte una perspectiva fresca y actual,
-        no dudes en contactarme si crees que puedo ser de ayuda en tu próximo
+        Me enfoco en seguir aprendiendo y en colaborar eficazmente en equipo,
+        manteniendo siempre una actitud proactiva. Si buscas a alguien que
+        aporte una perspectiva fresca y actual para tu próximo proyecto, no
+        dudes en contactarme si crees que puedo ser de ayuda en tu próximo
         proyecto.
       </p>
       <Heading direction="left" className="my-20 text-end">
