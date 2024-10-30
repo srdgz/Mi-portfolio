@@ -56,6 +56,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 hover:text-blue-400"
+            aria-label="Perfil de LinkedIn de Sandra Rodríguez"
           >
             <i className="fab fa-linkedin-in text-xl"></i>
           </a>
@@ -64,6 +65,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 hover:text-blue-400"
+            aria-label="Perfil de GitHub de Sandra Rodríguez"
           >
             <i className="fab fa-github text-xl"></i>
           </a>
@@ -71,6 +73,7 @@ const Navbar = () => {
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden text-gray-800 hover:text-blue-400 focus:outline-none transition-transform transform duration-300"
+          aria-label="Desplegar menú"
         >
           {isMenuOpen ? (
             <i className="fas fa-times fa-xl"></i>
@@ -117,6 +120,7 @@ const Navbar = () => {
                   href="https://linkedin.com/in/sandra-rodriguez-reyes"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Perfil de LinkedIn de Sandra Rodríguez"
                 >
                   <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-400 fa-xl me-4 pb-5"></i>
                 </a>
@@ -124,6 +128,7 @@ const Navbar = () => {
                   href="https://github.com/srdgz"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Perfil de GitHub de Sandra Rodríguez"
                 >
                   <i className="fab fa-github text-gray-800 hover:text-blue-400 fa-xl me-4 pb-5"></i>
                 </a>

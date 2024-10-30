@@ -129,6 +129,7 @@ const Contact = () => {
           <button
             type="submit"
             className="px-4 py-2 bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
+            aria-label="Enviar formulario de contacto"
           >
             Enviar
           </button>
