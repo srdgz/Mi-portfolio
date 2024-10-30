@@ -16,12 +16,12 @@ const Heading = ({ children, className, direction = "right" }) => {
   }, [isVisible, direction]);
 
   return (
-    <h2
+    <h1
       ref={headingRef}
       className={`text-xl md:text-2xl mb-20 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto ${className}`}
     >
       {children}
-    </h2>
+    </h1>
   );
 };
 

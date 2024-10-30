@@ -31,9 +31,9 @@ const Card = ({ title, description, images, tech, repoLink, demoLink }) => {
         alt={`Imagen de ${title}`}
       />
       <div className="flex-grow px-5">
-        <h5 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
+        <h2 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
           {title}
-        </h5>
+        </h2>
         <p className="m-2 font-normal text-gray-600">{description}</p>
         <div className="flex flex-wrap justify-start">
           {tech && Array.isArray(tech)

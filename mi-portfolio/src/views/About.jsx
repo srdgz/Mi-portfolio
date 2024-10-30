@@ -39,73 +39,73 @@ const About = () => {
       <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8">
         <li className="flex items-center relative group">
           <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             JavaScript
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={react} alt="React" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             React
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={next} alt="NextJS" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             NextJS
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={typescript} alt="TypeScript" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             TypeScript
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={tailwind} alt="Tailwind CSS" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             TailwindCSS
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={bootstrap} alt="Bootstrap" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Bootstrap
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={node} alt="NodeJS" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Node.js
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={python} alt="Python" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Python
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={flask} alt="Flask" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Flask
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={postgre} alt="PostgreSQL" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             PostgreSQL
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={aws} alt="AWS" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             AWS
           </span>
         </li>
         <li className="flex items-center relative group">
           <img src={jest} alt="Jest" className="h-8 md:h-10" />
-          <span className="absolute hidden group-hover:block text-gray-500 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+          <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Jest
           </span>
         </li>
