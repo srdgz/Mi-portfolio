@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import NavLink from "./NavLink.jsx";
 
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +13,14 @@ const Navbar = () => {
   };
 
   return (
-    <header className="lg:px-24 px-6 py-4 z-10 w-full">
+    <header className="lg:px-32 px-6 py-4 z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <Link to="/" onClick={closeMenu}>
-          <img className="h-10 w-auto md:block" src={logo} alt="Logo" />
+          <img
+            className="w-28 md:w-36 lg:w-48 md:block"
+            src={logo}
+            alt="Logo"
+          />
         </Link>
         <ul className="flex-1 flex justify-end items-center me-16 gap-16 max-md:hidden">
           <div className="flex space-x-4">
