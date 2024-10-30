@@ -30,7 +30,7 @@ const HomePage = () => {
                 href="https://linkedin.com/in/sandra-rodriguez-reyes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-800 hover:text-blue-400"
+                className="text-gray-800 hover:text-blue-500"
                 aria-label="Perfil de LinkedIn de Sandra Rodríguez"
               >
                 <i className="fab fa-linkedin-in text-3xl"></i>
@@ -39,7 +39,7 @@ const HomePage = () => {
                 href="https://github.com/srdgz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-800 hover:text-blue-400"
+                className="text-gray-800 hover:text-blue-500"
                 aria-label="Perfil de Github de Sandra Rodríguez"
               >
                 <i className="fab fa-github text-3xl"></i>
@@ -48,7 +48,7 @@ const HomePage = () => {
             <div className="flex justify-start space-x-4 mt-4">
               <a
                 href="mailto:rreyes.sandra@gmail.com"
-                className="rounded-full px-2 lg:px-4 py-2 text-sm md:text-md text-center font-bold bg-blue-400 text-white hover:bg-blue-500 shadow-lg focus:outline-none"
+                className="rounded-full px-2 lg:px-4 py-2 text-sm md:text-md text-center font-bold bg-blue-500 text-white hover:bg-blue-600 shadow-md shadow-blue-200 focus:outline-none"
                 aria-label="Contactar conmigo"
               >
                 ¡Contacta conmigo!

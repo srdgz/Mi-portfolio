@@ -34,9 +34,7 @@ const Card = ({ title, description, images, tech, repoLink, demoLink }) => {
         <h5 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
           {title}
         </h5>
-        <p className="m-2 font-normal text-gray-700 dark:text-gray-400">
-          {description}
-        </p>
+        <p className="m-2 font-normal text-gray-600">{description}</p>
         <div className="flex flex-wrap justify-start">
           {tech && Array.isArray(tech)
             ? tech.map((t, index) => <TechBalloon key={index} tech={t} />)

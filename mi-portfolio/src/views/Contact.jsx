@@ -128,7 +128,7 @@ const Contact = () => {
         <div className="flex justify-start">
           <button
             type="submit"
-            className="px-4 py-2 bg-blue-400 text-white rounded-[50px] hover:bg-blue-500 focus:outline-none shadow-lg"
+            className="px-4 py-2 bg-blue-500 text-white font-bold rounded-[50px] hover:bg-blue-600 focus:outline-none shadow-md shadow-blue-200"
             aria-label="Enviar formulario de contacto"
           >
             Enviar

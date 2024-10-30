@@ -22,13 +22,13 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Perfil de LinkedIn de Sandra Rodríguez"
           >
-            <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-400 text-xl"></i>
+            <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-500 text-xl"></i>
           </a>
           <a
             href="mailto:rreyes.sandra@gmail.com"
             aria-label="Enviar email a Sandra Rodríguez"
           >
-            <i className="fas fa-at text-gray-800 hover:text-blue-400 text-xl"></i>
+            <i className="fas fa-at text-gray-800 hover:text-blue-500 text-xl"></i>
           </a>
           <a
             href="https://github.com/srdgz"
@@ -36,7 +36,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Perfil de GitHub de Sandra Rodríguez"
           >
-            <i className="fab fa-github text-gray-800 hover:text-blue-400 text-xl"></i>
+            <i className="fab fa-github text-gray-800 hover:text-blue-500 text-xl"></i>
           </a>
         </div>
       </div>

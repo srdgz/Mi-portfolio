@@ -23,28 +23,28 @@ const Navbar = () => {
             <NavLink
               to="/"
               onClick={closeMenu}
-              className="text-gray-800 hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              className="text-gray-800 hover:text-blue-500 px-3 py-2 text-sm font-medium"
             >
               Inicio
             </NavLink>
             <NavLink
               to="/about"
               onClick={closeMenu}
-              className="text-gray-800 hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              className="text-gray-800 hover:text-blue-500 px-3 py-2 text-sm font-medium"
             >
               Sobre mí
             </NavLink>
             <NavLink
               to="/projects"
               onClick={closeMenu}
-              className="text-gray-800 hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              className="text-gray-800 hover:text-blue-500 px-3 py-2 text-sm font-medium"
             >
               Proyectos
             </NavLink>
             <NavLink
               to="/contact"
               onClick={closeMenu}
-              className="text-gray-800 hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              className="text-gray-800 hover:text-blue-500 px-3 py-2 text-sm font-medium"
             >
               Contacto
             </NavLink>
@@ -55,7 +55,7 @@ const Navbar = () => {
             href="https://linkedin.com/in/sandra-rodriguez-reyes"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-400"
+            className="text-gray-800 hover:text-blue-500"
             aria-label="Perfil de LinkedIn de Sandra Rodríguez"
           >
             <i className="fab fa-linkedin-in text-xl"></i>
@@ -64,7 +64,7 @@ const Navbar = () => {
             href="https://github.com/srdgz"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-400"
+            className="text-gray-800 hover:text-blue-500"
             aria-label="Perfil de GitHub de Sandra Rodríguez"
           >
             <i className="fab fa-github text-xl"></i>
@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-gray-800 hover:text-blue-400 focus:outline-none transition-transform transform duration-300"
+          className="md:hidden text-gray-800 hover:text-blue-500 focus:outline-none transition-transform transform duration-300"
           aria-label="Desplegar menú"
         >
           {isMenuOpen ? (
@@ -90,28 +90,28 @@ const Navbar = () => {
                 <Link
                   to="/"
                   onClick={closeMenu}
-                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-400 transition-colors duration-300"
+                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-500 transition-colors duration-300"
                 >
                   Inicio
                 </Link>
                 <Link
                   to="/about"
                   onClick={closeMenu}
-                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-400 transition-colors duration-300"
+                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-500 transition-colors duration-300"
                 >
                   Sobre mí
                 </Link>
                 <Link
                   to="/projects"
                   onClick={closeMenu}
-                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-400 transition-colors duration-300"
+                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-500 transition-colors duration-300"
                 >
                   Proyectos
                 </Link>
                 <Link
                   to="/contact"
                   onClick={closeMenu}
-                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-400 transition-colors duration-300"
+                  className="block pe-4 py-2 text-md text-gray-800 hover:text-blue-500 transition-colors duration-300"
                 >
                   Contacto
                 </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   aria-label="Perfil de LinkedIn de Sandra Rodríguez"
                 >
-                  <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-400 fa-xl me-4 pb-5"></i>
+                  <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-500 fa-xl me-4 pb-5"></i>
                 </a>
                 <a
                   href="https://github.com/srdgz"
@@ -130,7 +130,7 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   aria-label="Perfil de GitHub de Sandra Rodríguez"
                 >
-                  <i className="fab fa-github text-gray-800 hover:text-blue-400 fa-xl me-4 pb-5"></i>
+                  <i className="fab fa-github text-gray-800 hover:text-blue-500 fa-xl me-4 pb-5"></i>
                 </a>
               </div>
             </ul>
