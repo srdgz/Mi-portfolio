@@ -7,6 +7,7 @@ export default {
         blob: "blob 7s infinite",
         slideInFromLeft: "slideInFromLeft 1.5s ease-out forwards",
         slideInFromRight: "slideInFromRight 1.5s ease-out forwards",
+        fadeUp: "fadeUp 3s ease-in-out",
       },
       keyframes: {
         blob: {
@@ -30,6 +31,10 @@ export default {
         slideInFromRight: {
           "0%": { transform: "translateX(100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        fadeUp: {
+          "0%": { opacity: 0, transform: "translateY(25px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
     },

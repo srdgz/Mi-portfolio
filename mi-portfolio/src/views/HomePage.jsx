@@ -5,12 +5,23 @@ import Contact from "./Contact";
 
 import front from "../assets/front.png";
 import codeSnap from "../assets/codeSnap.png";
+import { useRef } from "react";
+import { useIsVisible } from "../components/VisibleControl";
 
 const HomePage = () => {
+  const textRef = useRef();
+  const imageRef = useRef();
+  const isTextVisible = useIsVisible(textRef);
+
   return (
     <>
       <div className="flex flex-col h-screen md:flex-row items-center justify-center">
-        <div className="w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28">
+        <div
+          ref={textRef}
+          className={`w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28 ${
+            isTextVisible ? "animate-slideInFromLeft" : "opacity-0"
+          }`}
+        >
           <div className="text-start text-gray-800 p-10">
             <h1 className="text-3xl md:text-5xl text-gray-800 font-bold mb-6">
               ¡Bienvenid@ a mi portfolio!
@@ -57,7 +68,12 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8">
+        <div
+          ref={imageRef}
+          className={`${
+            isTextVisible ? "animate-fadeUp delay-500" : "opacity-0"
+          } lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8`}
+        >
           <img
             className="invisible lg:visible relative object-cover shadow-lg md:w-3/4 md:h-auto rounded-[20px] ml-[-10px] lg:ml-[-20px]"
             src={codeSnap}
