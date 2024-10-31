@@ -5,13 +5,24 @@ import Contact from "./Contact";
 
 import front from "../assets/front.png";
 import codeSnap from "../assets/codeSnap.png";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useIsVisible } from "../components/VisibleControl";
 
 const HomePage = () => {
   const textRef = useRef();
   const imageRef = useRef();
   const isTextVisible = useIsVisible(textRef);
+  const isImageVisible = useIsVisible(imageRef);
+  const [hasAnimated, setHasAnimated] = useState({ text: false, image: false });
+
+  useEffect(() => {
+    if (isTextVisible && !hasAnimated.text) {
+      setHasAnimated((prev) => ({ ...prev, text: true }));
+    }
+    if (isImageVisible && !hasAnimated.image) {
+      setHasAnimated((prev) => ({ ...prev, image: true }));
+    }
+  }, [isTextVisible, isImageVisible, hasAnimated]);
 
   return (
     <>
@@ -19,7 +30,9 @@ const HomePage = () => {
         <div
           ref={textRef}
           className={`w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28 ${
-            isTextVisible ? "animate-slideInFromLeft" : "opacity-0"
+            hasAnimated.text
+              ? "animate-slideInFromLeft opacity-100"
+              : "opacity-0"
           }`}
         >
           <div className="text-start text-gray-800 p-10">
@@ -71,7 +84,7 @@ const HomePage = () => {
         <div
           ref={imageRef}
           className={`${
-            isTextVisible ? "animate-fadeUp delay-500" : "opacity-0"
+            hasAnimated.image ? "animate-fadeUp opacity-100" : "opacity-0"
           } lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8`}
         >
           <img
