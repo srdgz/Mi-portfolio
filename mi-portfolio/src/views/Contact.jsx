@@ -49,7 +49,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6 mb-44">
-      <Heading className="text-end">Contacta conmigo</Heading>
+      <Heading>Contacta conmigo</Heading>
       <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
         <form
           ref={form}

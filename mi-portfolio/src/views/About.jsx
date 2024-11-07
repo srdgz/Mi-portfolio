@@ -33,7 +33,7 @@ const About = () => {
         dudes en contactarme si crees que puedo ser de ayuda en tu próximo
         proyecto.
       </p>
-      <Heading className="my-20 text-end">Stack</Heading>
+      <Heading>Stack</Heading>
       <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8">
         <li className="flex items-center relative group">
           <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
@@ -108,7 +108,7 @@ const About = () => {
           </span>
         </li>
       </ul>
-      <Heading className="my-20">Experiencia</Heading>
+      <Heading>Experiencia</Heading>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
         <li className="mb-4">
           <strong>Full-Stack Developer en Bubbo</strong> · Enero - Septiembre
@@ -158,7 +158,7 @@ const About = () => {
           </p>
         </li>
       </ul>
-      <Heading className="my-20 text-end">Formación</Heading>
+      <Heading>Formación</Heading>
       <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-8">
         <li className="mb-4">
           <strong>
