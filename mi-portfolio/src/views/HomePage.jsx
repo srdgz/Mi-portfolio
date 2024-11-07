@@ -5,11 +5,8 @@ import Contact from "./Contact";
 
 import front from "../assets/front.png";
 import codeSnap from "../assets/codeSnap.png";
-import { useRef } from "react";
 
 const HomePage = () => {
-  const imageRef = useRef();
-
   return (
     <>
       <div className="flex flex-col h-screen md:flex-row items-center justify-center">
@@ -60,10 +57,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div
-          ref={imageRef}
-          className="lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8 animate-fadeIn"
-        >
+        <div className="lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8 animate-fadeIn">
           <img
             className="invisible lg:visible relative object-cover shadow-lg md:w-3/4 md:h-auto rounded-[20px] ml-[-10px] lg:ml-[-20px]"
             src={codeSnap}
