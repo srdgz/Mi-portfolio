@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="lg:px-32 px-6 py-4 z-10 w-full">
+    <header className="xl:px-32 px-6 py-4 z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <Link to="/" onClick={closeMenu}>
           <img
@@ -23,7 +23,7 @@ const Navbar = () => {
           />
         </Link>
         <ul className="flex-1 flex justify-end items-center me-16 gap-16 max-md:hidden">
-          <div className="flex space-x-4">
+          <li>
             <NavLink
               to="/"
               onClick={closeMenu}
@@ -31,6 +31,8 @@ const Navbar = () => {
             >
               Inicio
             </NavLink>
+          </li>
+          <li>
             <NavLink
               to="/about"
               onClick={closeMenu}
@@ -38,6 +40,8 @@ const Navbar = () => {
             >
               Sobre mí
             </NavLink>
+          </li>
+          <li>
             <NavLink
               to="/projects"
               onClick={closeMenu}
@@ -45,6 +49,8 @@ const Navbar = () => {
             >
               Proyectos
             </NavLink>
+          </li>
+          <li>
             <NavLink
               to="/contact"
               onClick={closeMenu}
@@ -52,28 +58,32 @@ const Navbar = () => {
             >
               Contacto
             </NavLink>
-          </div>
+          </li>
         </ul>
-        <div className="hidden md:flex items-center space-x-4">
-          <a
-            href="https://linkedin.com/in/sandra-rodriguez-reyes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-500"
-            aria-label="Perfil de LinkedIn de Sandra Rodríguez"
-          >
-            <i className="fab fa-linkedin-in text-xl"></i>
-          </a>
-          <a
-            href="https://github.com/srdgz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-500"
-            aria-label="Perfil de GitHub de Sandra Rodríguez"
-          >
-            <i className="fab fa-github text-xl"></i>
-          </a>
-        </div>
+        <ul className="hidden md:flex items-center space-x-4">
+          <li>
+            <a
+              href="https://linkedin.com/in/sandra-rodriguez-reyes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 hover:text-blue-500"
+              aria-label="Perfil de LinkedIn de Sandra Rodríguez"
+            >
+              <i className="fab fa-linkedin-in text-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/srdgz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 hover:text-blue-500"
+              aria-label="Perfil de GitHub de Sandra Rodríguez"
+            >
+              <i className="fab fa-github text-xl"></i>
+            </a>
+          </li>
+        </ul>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden text-gray-800 hover:text-blue-500 focus:outline-none transition-transform transform duration-300"
@@ -90,7 +100,7 @@ const Navbar = () => {
         <div>
           <nav className="absolute top-16 right-0 me-2 w-32 bg-white border border-gray-200 shadow-lg rounded-xl py-1 z-50 text-end">
             <ul className="md:hidden flex flex-col items-end justify-center h-full ">
-              <div className="menu">
+              <li>
                 <Link
                   to="/"
                   onClick={closeMenu}
@@ -98,6 +108,8 @@ const Navbar = () => {
                 >
                   Inicio
                 </Link>
+              </li>
+              <li>
                 <Link
                   to="/about"
                   onClick={closeMenu}
@@ -105,6 +117,8 @@ const Navbar = () => {
                 >
                   Sobre mí
                 </Link>
+              </li>
+              <li>
                 <Link
                   to="/projects"
                   onClick={closeMenu}
@@ -112,6 +126,8 @@ const Navbar = () => {
                 >
                   Proyectos
                 </Link>
+              </li>
+              <li>
                 <Link
                   to="/contact"
                   onClick={closeMenu}
@@ -119,24 +135,30 @@ const Navbar = () => {
                 >
                   Contacto
                 </Link>
-                <hr className="border-t border-gray-300 my-2 me-2" />
+              </li>
+              <li className="w-full px-2">
+                <hr className="border-t border-gray-300 my-2" />
+              </li>
+              <li className="flex space-x-4 pe-4 py-2">
                 <a
                   href="https://linkedin.com/in/sandra-rodriguez-reyes"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Perfil de LinkedIn de Sandra Rodríguez"
+                  className="text-gray-800 hover:text-blue-500"
                 >
-                  <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-500 fa-xl me-4 pb-5"></i>
+                  <i className="fab fa-linkedin-in fa-xl"></i>
                 </a>
                 <a
                   href="https://github.com/srdgz"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Perfil de GitHub de Sandra Rodríguez"
+                  className="text-gray-800 hover:text-blue-500"
                 >
-                  <i className="fab fa-github text-gray-800 hover:text-blue-500 fa-xl me-4 pb-5"></i>
+                  <i className="fab fa-github fa-xl"></i>
                 </a>
-              </div>
+              </li>
             </ul>
           </nav>
         </div>
