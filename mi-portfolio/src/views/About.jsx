@@ -17,7 +17,7 @@ import aws from "../assets/aws.png";
 const About = () => {
   return (
     <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6">
-      <Heading direction="right">Sobre mí</Heading>
+      <Heading>Sobre mí</Heading>
       <p className="text-sm md:text-lg text-gray-500 mb-4">
         He dado un giro a mi carrera profesional hacia el desarrollo web,
         aprovechando habilidades clave como la atención al detalle y la
@@ -33,9 +33,7 @@ const About = () => {
         dudes en contactarme si crees que puedo ser de ayuda en tu próximo
         proyecto.
       </p>
-      <Heading direction="left" className="my-20 text-end">
-        Stack
-      </Heading>
+      <Heading className="my-20 text-end">Stack</Heading>
       <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8">
         <li className="flex items-center relative group">
           <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
@@ -110,9 +108,7 @@ const About = () => {
           </span>
         </li>
       </ul>
-      <Heading direction="right" className="my-20">
-        Experiencia
-      </Heading>
+      <Heading className="my-20">Experiencia</Heading>
       <ul className="list-none text-start text-sm md:text-lg text-gray-500 mb-4">
         <li className="mb-4">
           <strong>Full-Stack Developer en Bubbo</strong> · Enero - Septiembre
@@ -162,9 +158,7 @@ const About = () => {
           </p>
         </li>
       </ul>
-      <Heading direction="left" className="my-20 text-end">
-        Formación
-      </Heading>
+      <Heading className="my-20 text-end">Formación</Heading>
       <ul className="list-none text-end text-sm md:text-lg text-gray-500 mb-8">
         <li className="mb-4">
           <strong>

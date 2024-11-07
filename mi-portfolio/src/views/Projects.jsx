@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <div className="max-w-md md:max-w-4xl lg:max-w-7xl mx-auto mt-8 md:mt-18 p-6">
-      <Heading direction="right">Mis últimos proyectos</Heading>
+      <Heading>Mis últimos proyectos</Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-32">
         <Card
           title="RoomieConnect"
