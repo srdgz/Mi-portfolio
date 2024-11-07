@@ -1,18 +1,19 @@
 import DownloadCvButton from "../components/DownloadCvButton";
 import Heading from "../components/Heading";
-
-import react from "../assets/react.png";
-import javascript from "../assets/JavaScript.png";
-import next from "../assets/next.png";
-import typescript from "../assets/typescript.png";
-import tailwind from "../assets/tailwind.png";
-import bootstrap from "../assets/bootstrap.png";
-import python from "../assets/python.png";
-import flask from "../assets/flask.png";
-import node from "../assets/node.png";
-import postgre from "../assets/postgre.png";
-import jest from "../assets/jest.png";
-import aws from "../assets/aws.png";
+import {
+  JavaScript,
+  React,
+  Nextjs,
+  TypeScript,
+  TailwindCSS,
+  Bootstrap,
+  Nodejs,
+  Python,
+  Flask,
+  PostgreSQL,
+  AmazonWebServices,
+  Jest,
+} from "../components/TechIcon";
 
 const About = () => {
   return (
@@ -36,73 +37,73 @@ const About = () => {
       <Heading>Stack</Heading>
       <ul className="grid grid-cols-6 lg:grid-cols-12 gap-4 md:gap-6 justify-center items-center list-none text-sm md:text-lg text-gray-500 mb-8 lg:mx-8">
         <li className="flex items-center relative group">
-          <img src={javascript} alt="JavaScript" className="h-8 md:h-10" />
+          <JavaScript />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             JavaScript
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={react} alt="React" className="h-8 md:h-10" />
+          <React />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             React
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={next} alt="NextJS" className="h-8 md:h-10" />
+          <Nextjs />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             NextJS
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={typescript} alt="TypeScript" className="h-8 md:h-10" />
+          <TypeScript />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             TypeScript
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={tailwind} alt="Tailwind CSS" className="h-8 md:h-10" />
+          <TailwindCSS />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             TailwindCSS
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={bootstrap} alt="Bootstrap" className="h-8 md:h-10" />
+          <Bootstrap />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Bootstrap
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={node} alt="NodeJS" className="h-8 md:h-10" />
+          <Nodejs />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Node.js
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={python} alt="Python" className="h-8 md:h-10" />
+          <Python />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Python
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={flask} alt="Flask" className="h-8 md:h-10" />
+          <Flask />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Flask
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={postgre} alt="PostgreSQL" className="h-8 md:h-10" />
+          <PostgreSQL />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             PostgreSQL
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={aws} alt="AWS" className="h-8 md:h-10" />
+          <AmazonWebServices />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             AWS
           </span>
         </li>
         <li className="flex items-center relative group">
-          <img src={jest} alt="Jest" className="h-8 md:h-10" />
+          <Jest />
           <span className="absolute hidden group-hover:block text-gray-600 bg-green-200 rounded-[50px] px-2 py-1 text-sm top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
             Jest
           </span>
