@@ -5,36 +5,15 @@ import Contact from "./Contact";
 
 import front from "../assets/front.png";
 import codeSnap from "../assets/codeSnap.png";
-import { useRef, useState, useEffect } from "react";
-import { useIsVisible } from "../components/VisibleControl";
+import { useRef } from "react";
 
 const HomePage = () => {
-  const textRef = useRef();
   const imageRef = useRef();
-  const isTextVisible = useIsVisible(textRef);
-  const isImageVisible = useIsVisible(imageRef);
-  const [hasAnimated, setHasAnimated] = useState({ text: false, image: false });
-
-  useEffect(() => {
-    if (isTextVisible && !hasAnimated.text) {
-      setHasAnimated((prev) => ({ ...prev, text: true }));
-    }
-    if (isImageVisible && !hasAnimated.image) {
-      setHasAnimated((prev) => ({ ...prev, image: true }));
-    }
-  }, [isTextVisible, isImageVisible, hasAnimated]);
 
   return (
     <>
       <div className="flex flex-col h-screen md:flex-row items-center justify-center">
-        <div
-          ref={textRef}
-          className={`w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28 ${
-            hasAnimated.text
-              ? "animate-slideInFromLeft opacity-100"
-              : "opacity-0"
-          }`}
-        >
+        <div className="w-full h-screen md:w-1/2 flex items-center justify-center xl:px-28">
           <div className="text-start text-gray-800 p-10">
             <h1 className="text-3xl md:text-5xl text-gray-800 font-bold mb-6">
               ¡Bienvenid@ a mi portfolio!
@@ -83,9 +62,7 @@ const HomePage = () => {
         </div>
         <div
           ref={imageRef}
-          className={`${
-            hasAnimated.image ? "animate-fadeUp opacity-100" : "opacity-0"
-          } lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8`}
+          className="lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8 animate-fadeIn"
         >
           <img
             className="invisible lg:visible relative object-cover shadow-lg md:w-3/4 md:h-auto rounded-[20px] ml-[-10px] lg:ml-[-20px]"
