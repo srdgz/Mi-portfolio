@@ -3,6 +3,7 @@ import { useState } from "react";
 import { MenuIcon, CloseIcon } from "@/presentation/components/atoms/Icons";
 import DownloadCvButton from "@/presentation/components/molecules/DownloadCvButton";
 import LanguageSwitch from "@/presentation/components/molecules/LanguageSwitch";
+import ThemeSwitch from "@/presentation/components/molecules/ThemeSwitch";
 import useActiveSection from "@/presentation/hooks/useActiveSection";
 import useLanguage from "@/presentation/hooks/useLanguage";
 
@@ -48,7 +49,7 @@ const Navbar = () => {
               aria-current={activeId === id ? "true" : undefined}
               className={`flex items-baseline gap-1.5 px-3 py-3 text-[15px] transition-colors hover:text-accent ${activeId === id ? "text-accent" : ""}`}
             >
-              <span className="font-mono text-[11px] text-muted">
+              <span className="font-mono text-[11px] text-muted max-xl:hidden">
                 0{index + 1}
               </span>
               {label}
@@ -56,8 +57,14 @@ const Navbar = () => {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <div className="max-[359px]:hidden">
+          <div className="max-sm:hidden">
             <LanguageSwitch />
+          </div>
+          <div className="max-[349px]:hidden sm:hidden">
+            <LanguageSwitch compact />
+          </div>
+          <div className="max-[349px]:hidden">
+            <ThemeSwitch />
           </div>
           <div className="max-sm:hidden">
             <DownloadCvButton />
@@ -91,8 +98,9 @@ const Navbar = () => {
               </a>
             ))}
             <div className="mt-2 flex flex-col items-start gap-3 border-t border-line px-3 pt-3 pb-1 sm:hidden">
-              <div className="min-[360px]:hidden">
+              <div className="flex items-center gap-2 min-[350px]:hidden">
                 <LanguageSwitch />
+                <ThemeSwitch />
               </div>
               <DownloadCvButton />
             </div>

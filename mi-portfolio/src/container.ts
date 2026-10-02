@@ -2,6 +2,7 @@ import { makeCopyText } from "@/application/useCases/copyText";
 import { makeGetEducation } from "@/application/useCases/getEducation";
 import { makeGetExperience } from "@/application/useCases/getExperience";
 import { makeGetInitialLocale } from "@/application/useCases/getInitialLocale";
+import { makeGetInitialTheme } from "@/application/useCases/getInitialTheme";
 import { makeGetProfile } from "@/application/useCases/getProfile";
 import { makeGetProjects } from "@/application/useCases/getProjects";
 import { makeGetStack } from "@/application/useCases/getStack";
@@ -11,6 +12,7 @@ import { localeRepository } from "@/infrastructure/repositories/localeRepository
 import { profileRepository } from "@/infrastructure/repositories/profileRepository";
 import { projectRepository } from "@/infrastructure/repositories/projectRepository";
 import { stackRepository } from "@/infrastructure/repositories/stackRepository";
+import { themeRepository } from "@/infrastructure/repositories/themeRepository";
 import { clipboardService } from "@/infrastructure/services/clipboardService";
 
 export const getProfile = makeGetProfile(profileRepository);
@@ -20,3 +22,4 @@ export const getProjects = makeGetProjects(projectRepository);
 export const getEducation = makeGetEducation(educationRepository);
 export const copyText = makeCopyText(clipboardService);
 export const getInitialLocale = makeGetInitialLocale(localeRepository);
+export const getInitialTheme = makeGetInitialTheme(themeRepository);

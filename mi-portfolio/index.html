@@ -5,6 +5,13 @@
     <link rel="icon" type="image/png" href="/icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0d0f14" />
+    <script>
+      document.documentElement.dataset.theme = window.matchMedia(
+        "(prefers-color-scheme: light)",
+      ).matches
+        ? "light"
+        : "dark";
+    </script>
     <title>Sandra Rodríguez | Desarrolladora Frontend · Web y Mobile</title>
     <meta
       name="description"

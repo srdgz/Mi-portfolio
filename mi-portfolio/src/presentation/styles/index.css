@@ -9,6 +9,7 @@
   --color-accent: #7aa2ff;
   --color-on-accent: #0d0f14;
   --color-warm: #ffb86b;
+  --color-shadow: #000000;
 
   --font-display: "Schibsted Grotesk", sans-serif;
   --font-sans: "Instrument Sans", system-ui, sans-serif;
@@ -53,6 +54,29 @@
   }
 }
 
+:root {
+  color-scheme: dark;
+  --grid-line: rgb(122 162 255 / 0.05);
+  --grid-spot: rgb(122 162 255 / 0.4);
+  --grid-glow: rgb(122 162 255 / 0.13);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-base: #f3f5f8;
+  --color-card: #ffffff;
+  --color-ink: #10131a;
+  --color-muted: #515866;
+  --color-line: #d5dae3;
+  --color-accent: #1f4fd8;
+  --color-on-accent: #ffffff;
+  --color-warm: #b45309;
+  --color-shadow: #6b7385;
+  --grid-line: rgb(31 79 216 / 0.07);
+  --grid-spot: rgb(31 79 216 / 0.35);
+  --grid-glow: rgb(31 79 216 / 0.08);
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -87,7 +111,7 @@
     --my: -999px;
     background-image: radial-gradient(
       70% 55% at 75% 0%,
-      rgb(122 162 255 / 0.13),
+      var(--grid-glow),
       transparent
     );
   }
@@ -101,11 +125,11 @@
   }
 
   .grid-bg-lines {
-    --grid-color: rgb(122 162 255 / 0.05);
+    --grid-color: var(--grid-line);
   }
 
   .grid-bg-spot {
-    --grid-color: rgb(122 162 255 / 0.4);
+    --grid-color: var(--grid-spot);
     mask-image: radial-gradient(
       260px circle at var(--mx) var(--my),
       black,
