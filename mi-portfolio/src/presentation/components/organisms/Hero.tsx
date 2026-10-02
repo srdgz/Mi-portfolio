@@ -106,20 +106,20 @@ const Hero = () => {
           />
           <Corners />
           <p
-            className="absolute top-3 left-3 font-mono text-xs text-on-accent/70"
+            className="absolute top-3 left-3 font-mono text-xs text-black/60"
             aria-hidden="true"
           >
             fig. 01
           </p>
           <p
-            className="absolute top-4 -right-2 border border-line bg-card px-3 py-2 font-mono text-xs text-muted shadow-xl shadow-black/40 max-sm:hidden"
+            className="absolute top-4 -right-2 border border-line bg-card px-3 py-2 font-mono text-xs text-muted shadow-xl shadow-shadow/40 max-sm:hidden"
             aria-hidden="true"
           >
             <span className="text-accent">{"<App"}</span> targets=
             <span className="text-warm">{'"iOS · Android · Web"'}</span>{" "}
             <span className="text-accent">{"/>"}</span>
           </p>
-          <p className="absolute bottom-6 -left-2 flex items-center gap-3 border border-line bg-card px-4 py-3 text-sm shadow-xl shadow-black/40 sm:-left-5">
+          <p className="absolute bottom-6 -left-2 flex items-center gap-3 border border-line bg-card px-4 py-3 text-sm shadow-xl shadow-shadow/40 sm:-left-5">
             <span className="relative flex size-2.5" aria-hidden="true">
               <span className="absolute inset-0 animate-ping-slow rounded-full bg-warm motion-reduce:animate-none"></span>
               <span className="relative size-2.5 rounded-full bg-warm"></span>

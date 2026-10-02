@@ -10,6 +10,14 @@ const es = {
     label: "Idioma",
     es: "Español",
     en: "Inglés",
+    switchTo: {
+      es: "Cambiar a español",
+      en: "Cambiar a inglés",
+    },
+  },
+  theme: {
+    toLight: "Cambiar a tema claro",
+    toDark: "Cambiar a tema oscuro",
   },
   nav: {
     main: "Principal",
@@ -98,6 +106,14 @@ const en: Messages = {
     label: "Language",
     es: "Spanish",
     en: "English",
+    switchTo: {
+      es: "Switch to Spanish",
+      en: "Switch to English",
+    },
+  },
+  theme: {
+    toLight: "Switch to light theme",
+    toDark: "Switch to dark theme",
   },
   nav: {
     main: "Main",
