@@ -112,7 +112,7 @@ const About = () => {
       <Heading>Experiencia</Heading>
       <ol className="relative border-s border-blue-400 lg:mx-8">
         <li className="mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             Enero - Septiembre 2024
           </time>
@@ -144,7 +144,7 @@ const About = () => {
           </p>
         </li>
         <li className="mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             Septiembre - Diciembre 2023
           </time>
@@ -169,7 +169,7 @@ const About = () => {
           </p>
         </li>
         <li className="ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             Junio - Agosto 2023
           </time>
@@ -196,7 +196,7 @@ const About = () => {
       <Heading>Formación</Heading>
       <ol className="relative border-s border-blue-400 lg:mx-8">
         <li className="mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             Cursando
           </time>
@@ -208,7 +208,7 @@ const About = () => {
           </p>
         </li>
         <li className="mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             2023
           </time>
@@ -218,7 +218,7 @@ const About = () => {
           <p className="text-base font-normal text-gray-500">4Geeks Academy</p>
         </li>
         <li className="mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             2011
           </time>
@@ -230,7 +230,7 @@ const About = () => {
           </p>
         </li>
         <li className="ms-4">
-          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5"></div>
+          <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -inset-s-1.5"></div>
           <time className="mb-1 text-md font-normal leading-none text-gray-500">
             2008
           </time>

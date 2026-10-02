@@ -30,7 +30,7 @@ const Card = ({ title, description, images, tech, repoLink, demoLink }) => {
         src={hovered && images && images.length > 1 ? images[1] : currentImage}
         alt={`Imagen de ${title}`}
       />
-      <div className="flex-grow px-5">
+      <div className="grow px-5">
         <h2 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
           {title}
         </h2>

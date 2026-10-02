@@ -1,12 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
+@theme {
+  --animate-blob: blob 7s infinite;
+  --animate-fadeIn: fadeIn 3s ease-out forwards;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.2);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.8);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
   }
-  .animation-delay-4000 {
-    animation-delay: 4s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+@utility animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+:root {
+  --fa-width: auto;
 }

@@ -86,7 +86,7 @@ const Navbar = () => {
         </ul>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-gray-800 hover:text-blue-500 focus:outline-none transition-transform transform duration-300"
+          className="md:hidden text-gray-800 hover:text-blue-500 focus:outline-hidden transition-transform transform duration-300"
           aria-label="Desplegar menú"
         >
           {isMenuOpen ? (
