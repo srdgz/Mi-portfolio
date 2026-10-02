@@ -59,12 +59,12 @@ const HomePage = () => {
         </div>
         <div className="lg:relative w-80 h-80 md:w-1/2 flex items-center justify-center ml-4 md:ml-8 animate-fadeIn">
           <img
-            className="invisible lg:visible relative object-cover shadow-lg md:w-3/4 md:h-auto rounded-[20px] ml-[-10px] lg:ml-[-20px]"
+            className="invisible lg:visible relative object-cover shadow-lg md:w-3/4 md:h-auto rounded-[20px] -ml-2.5 lg:-ml-5"
             src={codeSnap}
             alt="CodeSnap"
           />
           <img
-            className="mb-16 mr-72 lg:absolute lg:w-1/4 lg:h-auto lg:-right-48 lg:-top-20 xl:-top-36 2xl:-top-52 rounded-full object-cover bg-opacity-0 ml-[-10px] lg:ml-[-20px]"
+            className="mb-16 mr-72 lg:absolute lg:w-1/4 lg:h-auto lg:-right-48 lg:-top-20 xl:-top-36 2xl:-top-52 rounded-full object-cover bg-opacity-0 -ml-2.5 lg:-ml-5"
             src={front}
             alt="Imagen"
           />
