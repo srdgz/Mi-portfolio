@@ -1,42 +1,30 @@
-import react from "../assets/react.png";
-
 const Footer = () => {
   return (
-    <footer className="bg-white bottom-0 left-0 right-0">
-      <hr className="border-t border-gray-300 max-w-3xl mx-auto" />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between">
-        <span className="text-sm text-gray-800 sm:text-center flex items-center mb-2 sm:mb-0">
-          © 2024 | Web realizada con
-          <img
-            src={react}
-            alt="React"
-            className="inline-block w-5 h-5 ml-1 mr-1"
-          />
-          por Sandra Rodríguez
-        </span>
-
-        <div className="flex items-center space-x-4 mt-4 sm:mt-0">
+    <footer className="border-t border-line">
+      <div className="mx-auto flex max-w-300 flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-5 text-sm text-muted sm:px-8 lg:px-12">
+        <span>© 2026 · Sandra Rodríguez Reyes</span>
+        <div className="flex gap-1">
           <a
             href="https://linkedin.com/in/sandra-rodriguez-reyes"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Perfil de LinkedIn de Sandra Rodríguez"
+            className="px-2.5 py-3 text-ink hover:text-accent"
           >
-            <i className="fab fa-linkedin-in text-gray-800 hover:text-blue-500 text-xl"></i>
-          </a>
-          <a
-            href="mailto:rreyes.sandra@gmail.com"
-            aria-label="Enviar email a Sandra Rodríguez"
-          >
-            <i className="fas fa-at text-gray-800 hover:text-blue-500 text-xl"></i>
+            LinkedIn
           </a>
           <a
             href="https://github.com/srdgz"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Perfil de GitHub de Sandra Rodríguez"
+            className="px-2.5 py-3 text-ink hover:text-accent"
           >
-            <i className="fab fa-github text-gray-800 hover:text-blue-500 text-xl"></i>
+            GitHub
+          </a>
+          <a
+            href="mailto:rreyes.sandra@gmail.com"
+            className="px-2.5 py-3 text-ink hover:text-accent"
+          >
+            Email
           </a>
         </div>
       </div>

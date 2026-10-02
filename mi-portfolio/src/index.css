@@ -1,51 +1,73 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --animate-blob: blob 7s infinite;
-  --animate-fadeIn: fadeIn 3s ease-out forwards;
+  --color-base: #0d0f14;
+  --color-card: #161a22;
+  --color-ink: #f3f1ec;
+  --color-muted: #a8aebb;
+  --color-line: #2a303c;
+  --color-accent: #7aa2ff;
+  --color-on-accent: #0d0f14;
+  --color-warm: #ffb86b;
 
-  @keyframes blob {
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-sans: "Instrument Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-drift: drift 22s ease-in-out infinite alternate;
+  --animate-drift-slow: drift 34s ease-in-out infinite alternate-reverse;
+
+  @keyframes drift {
     0% {
-      transform: translate(0px, 0px) scale(1);
-    }
-    33% {
-      transform: translate(30px, -50px) scale(1.2);
-    }
-    66% {
-      transform: translate(-20px, 20px) scale(0.8);
+      transform: translate3d(0, 0, 0) scale(1);
     }
     100% {
-      transform: translate(0px, 0px) scale(1);
-    }
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
+      transform: translate3d(14vmax, 9vmax, 0) scale(1.15);
     }
   }
 }
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  section[id] {
+    scroll-margin-top: 1.5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-warm);
+    outline-offset: 3px;
+  }
+
+  ::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
   }
 }
 
-@utility animation-delay-2000 {
-  animation-delay: 2s;
-}
+@layer components {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition:
+        opacity 0.7s ease-out,
+        transform 0.7s ease-out;
+    }
 
-@utility animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-:root {
-  --fa-width: auto;
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }

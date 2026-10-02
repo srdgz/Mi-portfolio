@@ -1,127 +1,70 @@
 import Card from "../components/Card.jsx";
 import Heading from "../components/Heading.jsx";
+import useReveal from "../hooks/useReveal";
 
 import RoomiesDesktop from "../assets/projects/RoomiesDesktop.png";
-import RoomiesMobile from "../assets/projects/RoomiesMobile.png";
 import FrescaGoDesktop from "../assets/projects/FrescaGoDesktop.png";
-import FrescaGoMobile from "../assets/projects/FrescaGoMobile.png";
-import WeatherDesktop from "../assets/projects/WeatherDesktop.png";
-import WeatherMobile from "../assets/projects/WeatherMobile.png";
 import CookiesDesktop from "../assets/projects/CookiesDesktop.png";
-import CookiesMobile from "../assets/projects/CookiesMobile.png";
 import SmartStayDesktop from "../assets/projects/SmartStayDesktop.png";
-import SmartStayMobile from "../assets/projects/SmartStayMobile.png";
 import WallifyDesktop from "../assets/projects/WallifyDesktop.png";
-import WallifyMobile from "../assets/projects/WallifyMobile.png";
 
 const Projects = () => {
-  const weatherTodayImages = [WeatherDesktop, WeatherMobile];
-  const roomieConnectImages = [RoomiesDesktop, RoomiesMobile];
-  const smartStayImages = [SmartStayDesktop, SmartStayMobile];
-  const cookiesImages = [CookiesDesktop, CookiesMobile];
-  const wallifyImages = [WallifyDesktop, WallifyMobile];
-  const frescagoImages = [FrescaGoDesktop, FrescaGoMobile];
+  const ref = useReveal();
 
   return (
-    <div className="max-w-md md:max-w-4xl lg:max-w-7xl mx-auto mt-8 md:mt-18 p-6">
-      <Heading>Mis últimos proyectos</Heading>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-32">
-        <Card
-          title="RoomieConnect"
-          description="Aplicación web para gestionar las tareas y gastos compartidos con tus compañeros de piso."
-          images={roomieConnectImages}
-          tech={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Tailwind CSS",
-            "PostgreSQL",
-            "Python",
-            "Flask",
-          ]}
-          repoLink={"https://github.com/srdgz/RoomieConnect"}
-          demoLink={"https://roomieconnect-msl6.onrender.com/"}
-        />
+    <section
+      id="proyectos"
+      ref={ref}
+      className="reveal mx-auto flex max-w-300 flex-col gap-10 px-5 pb-[clamp(64px,9vw,128px)] sm:px-8 lg:px-12"
+    >
+      <Heading label="03 — Proyectos">Proyectos personales.</Heading>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-6">
         <Card
           title="FrescaGo"
-          description="FrescaGo es un e-commerce moderno que ofrece una experiencia de compra en línea completa y fluida."
-          images={frescagoImages}
-          tech={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Tailwind CSS",
-            "Framer Motion",
-            "NodeJS",
-            "Express",
-            "Firebase",
-            "Stripe",
-          ]}
+          label="Web"
+          description="E-commerce con una experiencia de compra en línea completa, incluidos los pagos."
+          image={FrescaGoDesktop}
+          tech={["React", "Tailwind CSS", "Node.js", "Firebase", "Stripe"]}
           repoLink={"https://github.com/srdgz/frescaGo"}
           demoLink={"https://frescago.vercel.app/"}
         />
         <Card
-          title="Wallify"
-          description="Aplicación móvil diseñada para explorar y descargar fondos de pantalla de alta calidad. Los usuarios pueden buscar la imagen que desean utilizando los filtros disponibles sobre formato, color, temática, etc."
-          images={wallifyImages}
-          tech={["React Native", "TypeScript", "Expo", "Pixabay API"]}
-          repoLink={"https://github.com/srdgz/wallify-app"}
-          demoLink={"https://github.com/srdgz/wallify-app"}
-        />
-        <Card
           title="SmartStay"
-          description="Reserva de habitaciones de hotel usando Stripe como método de pago. Añade reviews, gestiona y controla tus reservas desde tu panel de usuario."
-          images={smartStayImages}
-          tech={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "NextJS",
-            "Tailwind CSS",
-            "SanityIO",
-            "Stripe",
-          ]}
+          label="Web"
+          description="Reserva de alojamientos con pago mediante Stripe, reviews y panel de usuario para gestionar las reservas."
+          image={SmartStayDesktop}
+          tech={["Next.js", "Sanity", "Tailwind CSS", "Stripe"]}
           repoLink={"https://github.com/srdgz/smartstay"}
           demoLink={"https://smartstay.vercel.app/"}
         />
         <Card
+          title="Wallify"
+          label="Móvil"
+          description="App para explorar y descargar fondos de pantalla, con filtros por formato, color y temática."
+          image={WallifyDesktop}
+          tech={["React Native", "TypeScript", "Expo", "Pixabay API"]}
+          repoLink={"https://github.com/srdgz/wallify-app"}
+        />
+        <Card
+          title="RoomieConnect"
+          label="Web · Proyecto colaborativo"
+          description="Aplicación web para gestionar las tareas y los gastos compartidos entre compañeros de piso."
+          image={RoomiesDesktop}
+          tech={["React", "Tailwind CSS"]}
+          repoLink={"https://github.com/srdgz/RoomieConnect"}
+          demoLink={"https://roomieconnect-msl6.onrender.com/"}
+        />
+        <Card
           title="Cookies & Cream"
-          description="Landing page de una pastelería ficticia con información sobre sus productos, y tiendas."
-          images={cookiesImages}
-          tech={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Bootstrap",
-            "NodeJS",
-            "Express",
-            "Prisma",
-            "PostgreSQL",
-          ]}
+          label="Web"
+          description="Landing page de una pastelería ficticia con información sobre sus productos y tiendas."
+          image={CookiesDesktop}
+          tech={["React", "Bootstrap", "Node.js", "Express"]}
           repoLink={"https://github.com/srdgz/cookies-front"}
           demoLink="https://cookies-front-pied.vercel.app/"
         />
-        <Card
-          title="WeatherToday"
-          description="Consulta el pronóstico del tiempo de cualquier lugar del mundo gracias a WeatherAPI, obteniendo información en tiempo real."
-          images={weatherTodayImages}
-          tech={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Bootstrap",
-            "WeatherAPI",
-          ]}
-          repoLink={"https://github.com/srdgz/React-WeatherToday"}
-          demoLink="https://weather-today-steel.vercel.app/"
-        />
       </div>
-    </div>
+    </section>
   );
 };
 

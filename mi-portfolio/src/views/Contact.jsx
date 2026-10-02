@@ -1,154 +1,98 @@
-import { useState, useRef } from "react";
-import Heading from "../components/Heading";
-import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import plane from "../assets/plane.png";
+
+import useReveal from "../hooks/useReveal";
+import {
+  ArrowUpRightIcon,
+  CopyIcon,
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+} from "../components/Icons.jsx";
+
+const email = "rreyes.sandra@gmail.com";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    lastName: "",
-    email: "",
-    message: "",
-  });
-  const form = useRef();
+  const ref = useReveal();
 
-  const { name, lastName, email, message } = formData;
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE,
-        import.meta.env.VITE_TEMPLATE,
-        form.current,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Email enviado correctamente");
-        },
-
-        (error) => {
-          console.log(error.text);
-          toast.success("Error al enviar el email. Inténtalo de nuevo");
-        }
-      );
-    setFormData({
-      name: "",
-      lastName: "",
-      email: "",
-      message: "",
-    });
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      toast.success("Email copiado");
+    } catch {
+      toast.error("No se ha podido copiar el email");
+    }
   };
 
   return (
-    <div className="max-w-md md:max-w-4xl xl:max-w-7xl mx-auto mt-8 md:mt-18 p-6 mb-44">
-      <Heading>Contacta conmigo</Heading>
-      <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
-        <form
-          ref={form}
-          onSubmit={handleSubmit}
-          className="w-full md:w-1/2 max-w-md md:max-w-none mx-auto"
-        >
-          <div className="mb-4 flex space-x-4">
-            <div className="w-1/2">
-              <label
-                className="block text-gray-700 text-sm font-semibold mb-2 pt-4"
-                htmlFor="name"
-              >
-                Nombre*
-              </label>
-              <input
-                className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-hidden"
-                type="text"
-                name="name"
-                placeholder="Tu nombre"
-                value={name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="w-1/2">
-              <label
-                className="block text-gray-700 text-sm font-semibold mb-2 pt-4"
-                htmlFor="lastName"
-              >
-                Apellido*
-              </label>
-              <input
-                className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-hidden"
-                type="text"
-                name="lastName"
-                placeholder="Tu apellido"
-                value={lastName}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-semibold mb-2 pt-4"
-              htmlFor="email"
-            >
-              Email*
-            </label>
-            <input
-              className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-hidden"
-              type="email"
-              name="email"
-              placeholder="tu@email.com"
-              value={email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-semibold mb-2 pt-4"
-              htmlFor="message"
-            >
-              Mensaje*
-            </label>
-            <textarea
-              className="w-full h-24 px-3 py-2 text-gray-700 border rounded-md focus:outline-hidden"
-              name="message"
-              placeholder="Escribe tu mensaje"
-              value={message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
-          <div className="flex justify-start">
-            <button
-              type="submit"
-              className="px-4 py-2 bg-blue-600 text-white font-bold rounded-[50px] hover:bg-blue-700 focus:outline-hidden shadow-md shadow-blue-200"
-              aria-label="Enviar formulario de contacto"
-            >
-              Enviar
-            </button>
-          </div>
-        </form>
-        <div className="w-full md:w-1/2 flex flex-col items-center text-center space-y-4 mt-8 md:mt-0">
-          <img className="w-3/4" src={plane} alt="Avión de papel" />
-          <p className="text-gray-700 text-lg lg:text-xl">
-            O envíame un email a:{" "}
-            <a
-              href="mailto:rreyes.sandra@gmail.com"
-              className="text-blue-600 font-semibold"
-            >
-              rreyes.sandra@gmail.com
-            </a>
+    <section
+      id="contacto"
+      ref={ref}
+      className="reveal mx-auto max-w-300 px-5 pb-[clamp(64px,9vw,112px)] sm:px-8 lg:px-12"
+    >
+      <div className="flex flex-wrap items-center gap-x-16 gap-y-10 rounded-[36px] border border-line bg-card p-[clamp(24px,5vw,64px)]">
+        <div className="flex flex-[1_1_360px] flex-col gap-5">
+          <p className="font-mono text-sm text-muted">05 — Contacto</p>
+          <h2 className="font-display text-[clamp(40px,6vw,84px)] font-bold leading-[0.98] tracking-[-0.03em]">
+            ¿Hablamos?
+          </h2>
+          <p className="max-w-105 text-lg text-muted">
+            Busco un puesto de frontend web y móvil en remoto desde España.
+            Disponibilidad inmediata.
           </p>
         </div>
+        <div className="flex min-w-0 flex-[1_1_380px] flex-col gap-4">
+          <a
+            href={`mailto:${email}`}
+            className="flex items-center justify-between gap-4 rounded-3xl bg-accent px-6 py-5 text-lg font-semibold text-on-accent hover:brightness-110"
+          >
+            <span className="flex items-center gap-3">
+              <MailIcon size={22} />
+              Escríbeme un email
+            </span>
+            <ArrowUpRightIcon size={22} />
+          </a>
+          <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-3xl border border-line py-2 pl-6 pr-2">
+            <span className="min-w-0 py-2 font-mono text-[15px] wrap-anywhere">
+              {email}
+            </span>
+            <button
+              type="button"
+              onClick={copyEmail}
+              className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-full px-4 text-[15px] font-semibold hover:text-accent"
+            >
+              <CopyIcon />
+              Copiar
+            </button>
+          </div>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(min(160px,100%),1fr))] gap-4">
+            <a
+              href="https://linkedin.com/in/sandra-rodriguez-reyes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-3 rounded-3xl border border-line px-6 py-4 font-semibold hover:border-accent/60 hover:text-accent"
+            >
+              <span className="flex items-center gap-3">
+                <LinkedinIcon size={20} />
+                LinkedIn
+              </span>
+              <ArrowUpRightIcon />
+            </a>
+            <a
+              href="https://github.com/srdgz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-3 rounded-3xl border border-line px-6 py-4 font-semibold hover:border-accent/60 hover:text-accent"
+            >
+              <span className="flex items-center gap-3">
+                <GithubIcon size={20} />
+                GitHub
+              </span>
+              <ArrowUpRightIcon />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

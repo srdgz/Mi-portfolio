@@ -1,11 +1,11 @@
 # Portfolio de Sandra Rodríguez
 
-Este es mi portfolio personal, construido utilizando React, biblioteca de JavaScript. El portfolio presenta algunos de mis proyectos y habilidades en el desarrollo web y otras áreas relacionadas.
+Este es mi portfolio personal, construido utilizando React, biblioteca de JavaScript. El portfolio presenta algunos de mis proyectos y habilidades en el desarrollo web y app.
 
 # Funcionalidades
 
 Presenta una lista de proyectos realizados por mí.
-Permite a los visitantes contactar conmigo a través de un formulario de contacto interactivo.
+Permite a los visitantes contactar conmigo por email.
 Proporciona enlaces a perfiles de redes sociales y otras plataformas relevantes.
 
 # Tecnologías Utilizadas
