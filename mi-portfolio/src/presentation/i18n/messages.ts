@@ -44,7 +44,7 @@ const es = {
     linkedin: "Perfil de LinkedIn de Sandra Rodríguez",
     github: "Perfil de GitHub de Sandra Rodríguez",
     photoAlt: "Retrato de Sandra Rodríguez",
-    availability: "Disponibilidad inmediata",
+    availability: "Buscando nuevos retos",
   },
   about: {
     label: "Sobre mí",
@@ -140,7 +140,7 @@ const en: Messages = {
     linkedin: "Sandra Rodríguez's LinkedIn profile",
     github: "Sandra Rodríguez's GitHub profile",
     photoAlt: "Portrait of Sandra Rodríguez",
-    availability: "Available immediately",
+    availability: "Looking for new challenges",
   },
   about: {
     label: "About",
