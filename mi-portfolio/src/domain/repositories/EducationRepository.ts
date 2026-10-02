@@ -1,5 +1,6 @@
+import type { Locale } from "@/domain/entities/locale";
 import type { Study } from "@/domain/entities/study";
 
 export interface EducationRepository {
-  getAll: () => Study[];
+  getAll: (locale: Locale) => Study[];
 }

@@ -2,14 +2,17 @@ import toast from "react-hot-toast";
 
 import { copyText } from "@/container";
 import { CopyIcon } from "@/presentation/components/atoms/Icons";
+import useLanguage from "@/presentation/hooks/useLanguage";
 
 const CopyEmail = ({ email }: { email: string }) => {
+  const { t } = useLanguage();
+
   const copyEmail = async () => {
     try {
       await copyText(email);
-      toast.success("Email copiado");
+      toast.success(t.contact.copied);
     } catch {
-      toast.error("No se ha podido copiar el email");
+      toast.error(t.contact.copyError);
     }
   };
 
@@ -24,7 +27,7 @@ const CopyEmail = ({ email }: { email: string }) => {
         className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-full px-4 text-[15px] font-semibold hover:text-accent"
       >
         <CopyIcon />
-        Copiar
+        {t.contact.copy}
       </button>
     </div>
   );

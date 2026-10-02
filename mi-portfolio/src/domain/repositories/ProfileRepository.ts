@@ -1,5 +1,6 @@
+import type { Locale } from "@/domain/entities/locale";
 import type { Profile } from "@/domain/entities/profile";
 
 export interface ProfileRepository {
-  get: () => Profile;
+  get: (locale: Locale) => Profile;
 }

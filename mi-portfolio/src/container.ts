@@ -1,11 +1,13 @@
 import { makeCopyText } from "@/application/useCases/copyText";
 import { makeGetEducation } from "@/application/useCases/getEducation";
 import { makeGetExperience } from "@/application/useCases/getExperience";
+import { makeGetInitialLocale } from "@/application/useCases/getInitialLocale";
 import { makeGetProfile } from "@/application/useCases/getProfile";
 import { makeGetProjects } from "@/application/useCases/getProjects";
 import { makeGetStack } from "@/application/useCases/getStack";
 import { educationRepository } from "@/infrastructure/repositories/educationRepository";
 import { experienceRepository } from "@/infrastructure/repositories/experienceRepository";
+import { localeRepository } from "@/infrastructure/repositories/localeRepository";
 import { profileRepository } from "@/infrastructure/repositories/profileRepository";
 import { projectRepository } from "@/infrastructure/repositories/projectRepository";
 import { stackRepository } from "@/infrastructure/repositories/stackRepository";
@@ -17,3 +19,4 @@ export const getExperience = makeGetExperience(experienceRepository);
 export const getProjects = makeGetProjects(projectRepository);
 export const getEducation = makeGetEducation(educationRepository);
 export const copyText = makeCopyText(clipboardService);
+export const getInitialLocale = makeGetInitialLocale(localeRepository);

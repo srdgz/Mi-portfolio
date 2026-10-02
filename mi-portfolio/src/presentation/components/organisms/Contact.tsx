@@ -8,12 +8,13 @@ import {
 } from "@/presentation/components/atoms/Icons";
 import CopyEmail from "@/presentation/components/molecules/CopyEmail";
 import Heading from "@/presentation/components/molecules/Heading";
+import useLanguage from "@/presentation/hooks/useLanguage";
 import useReveal from "@/presentation/hooks/useReveal";
-
-const { email, linkedinUrl, githubUrl } = getProfile();
 
 const Contact = () => {
   const ref = useReveal();
+  const { locale, t } = useLanguage();
+  const { email, linkedinUrl, githubUrl } = getProfile(locale);
 
   return (
     <section
@@ -25,8 +26,9 @@ const Contact = () => {
         <Corners />
         <div className="grid items-center gap-x-16 gap-y-8 lg:grid-cols-12">
           <div className="flex flex-col gap-5 lg:col-span-6">
-            <Heading number="05" label="Contacto">
-              ¿Hablamos<span className="text-warm">?</span>
+            <Heading number="05" label={t.contact.label}>
+              {t.contact.titleStart}
+              <span className="text-warm">{t.contact.titleEnd}</span>
             </Heading>
           </div>
           <div className="flex min-w-0 flex-col gap-3 lg:col-span-6">
@@ -36,7 +38,7 @@ const Contact = () => {
             >
               <span className="flex items-center gap-3">
                 <MailIcon size={20} />
-                Escríbeme un email
+                {t.contact.email}
               </span>
               <span className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                 <ArrowUpRightIcon />

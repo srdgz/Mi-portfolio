@@ -5,6 +5,7 @@ import {
   PhoneFrame,
 } from "@/presentation/components/molecules/DeviceFrames";
 import ProjectLink from "@/presentation/components/molecules/ProjectLink";
+import useLanguage from "@/presentation/hooks/useLanguage";
 import useTilt from "@/presentation/hooks/useTilt";
 import useReveal from "@/presentation/hooks/useReveal";
 
@@ -26,6 +27,7 @@ const ProjectShowcase = ({
 }: ProjectShowcaseProps) => {
   const revealRef = useReveal();
   const tiltRef = useTilt(5);
+  const { t } = useLanguage();
   const isReversed = index % 2 === 0;
 
   return (
@@ -41,13 +43,10 @@ const ProjectShowcase = ({
           <BrowserFrame
             image={desktopImage}
             url={url}
-            alt={`Captura de ${title} en escritorio`}
+            alt={t.projects.desktopAlt(title)}
           />
           <div className="absolute right-0 bottom-0 w-[23%]">
-            <PhoneFrame
-              image={mobileImage}
-              alt={`Captura de ${title} en móvil`}
-            />
+            <PhoneFrame image={mobileImage} alt={t.projects.mobileAlt(title)} />
           </div>
         </div>
       </div>
@@ -69,10 +68,10 @@ const ProjectShowcase = ({
         <div className="flex flex-wrap gap-3 pt-2">
           {demoLink && (
             <ProjectLink href={demoLink} primary>
-              Ver demo
+              {t.projects.demo}
             </ProjectLink>
           )}
-          <ProjectLink href={repoLink}>Repositorio</ProjectLink>
+          <ProjectLink href={repoLink}>{t.projects.repository}</ProjectLink>
         </div>
       </div>
     </article>
