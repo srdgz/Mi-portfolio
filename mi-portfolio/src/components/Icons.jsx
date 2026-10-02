@@ -60,6 +60,18 @@ export const CopyIcon = ({ size }) => (
   </Icon>
 );
 
+export const StarIcon = ({ size = 18 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" />
+  </svg>
+);
+
 export const MenuIcon = ({ size }) => (
   <Icon size={size}>
     <path d="M4 6h16" />

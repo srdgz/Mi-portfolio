@@ -2,7 +2,7 @@ import Router from "./routes/router.jsx";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
 
-import GlowBg from "./components/GlowBg.jsx";
+import GridBg from "./components/GridBg.jsx";
 
 function App() {
   return (
@@ -17,7 +17,11 @@ function App() {
           },
         }}
       />
-      <GlowBg />
+      <GridBg />
+      <div
+        className="scroll-progress fixed inset-x-0 top-0 z-50 h-0.5 bg-warm"
+        aria-hidden="true"
+      ></div>
       <Router />
       <Analytics />
     </>

@@ -1,8 +1,14 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-line">
+    <footer className="overflow-hidden border-t border-line">
+      <p
+        className="text-outline select-none whitespace-nowrap px-5 pt-7 text-center font-display text-[clamp(28px,6vw,84px)] font-bold leading-none tracking-tight"
+        aria-hidden="true"
+      >
+        sandra.rodríguez
+      </p>
       <div className="mx-auto flex max-w-300 flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-5 text-sm text-muted sm:px-8 lg:px-12">
-        <span>© 2026 · Sandra Rodríguez Reyes</span>
+        <span>© 2026 · Sandra Rodríguez</span>
         <div className="flex gap-1">
           <a
             href="https://linkedin.com/in/sandra-rodriguez-reyes"

@@ -10,19 +10,42 @@
   --color-on-accent: #0d0f14;
   --color-warm: #ffb86b;
 
-  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-display: "Schibsted Grotesk", sans-serif;
   --font-sans: "Instrument Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --animate-drift: drift 22s ease-in-out infinite alternate;
-  --animate-drift-slow: drift 34s ease-in-out infinite alternate-reverse;
+  --animate-marquee: marquee 45s linear infinite;
+  --animate-marquee-reverse: marquee 60s linear infinite reverse;
+  --animate-blink: blink 1.1s steps(1) infinite;
+  --animate-draw: draw 0.9s 0.7s ease-out forwards;
+  --animate-ping-slow: ping-slow 2.2s ease-out infinite;
 
-  @keyframes drift {
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes ping-slow {
     0% {
-      transform: translate3d(0, 0, 0) scale(1);
+      transform: scale(1);
+      opacity: 0.7;
     }
     100% {
-      transform: translate3d(14vmax, 9vmax, 0) scale(1.15);
+      transform: scale(2.8);
+      opacity: 0;
     }
   }
 }
@@ -41,7 +64,7 @@
   }
 
   section[id] {
-    scroll-margin-top: 1.5rem;
+    scroll-margin-top: 6rem;
   }
 
   :focus-visible {
@@ -49,13 +72,73 @@
     outline-offset: 3px;
   }
 
-  ::placeholder {
-    color: var(--color-muted);
-    opacity: 1;
+  ::selection {
+    background-color: var(--color-warm);
+    color: var(--color-on-accent);
   }
 }
 
 @layer components {
+  .grid-bg {
+    --mx: -999px;
+    --my: -999px;
+    background-image: radial-gradient(
+      70% 55% at 75% 0%,
+      rgb(122 162 255 / 0.13),
+      transparent
+    );
+  }
+
+  .grid-bg-lines,
+  .grid-bg-spot {
+    background-image:
+      linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .grid-bg-lines {
+    --grid-color: rgb(122 162 255 / 0.05);
+  }
+
+  .grid-bg-spot {
+    --grid-color: rgb(122 162 255 / 0.4);
+    mask-image: radial-gradient(
+      260px circle at var(--mx) var(--my),
+      black,
+      transparent
+    );
+  }
+
+  .text-outline {
+    color: var(--color-base);
+    -webkit-text-stroke: 1.5px
+      color-mix(in srgb, var(--color-muted) 45%, var(--color-base));
+    paint-order: stroke fill;
+  }
+
+  .scroll-progress {
+    display: none;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .scroll-progress {
+      display: block;
+      transform-origin: 0 50%;
+      animation: scroll-progress linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+
+  @keyframes scroll-progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .reveal {
       opacity: 0;

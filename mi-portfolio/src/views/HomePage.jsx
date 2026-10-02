@@ -6,15 +6,17 @@ import Projects from "./Projects";
 import Education from "./Education";
 import Contact from "./Contact";
 
+import Corners from "../components/Corners.jsx";
+import Marquee from "../components/Marquee.jsx";
 import {
   ArrowUpRightIcon,
   GithubIcon,
   LinkedinIcon,
+  StarIcon,
 } from "../components/Icons.jsx";
 
 import useReveal from "../hooks/useReveal";
-
-import front from "../assets/front.png";
+import useTilt from "../hooks/useTilt";
 
 const mainStack = ["React Native", "Vue 3", "React", "TypeScript"];
 
@@ -36,6 +38,7 @@ const stack = [
 
 const HomePage = () => {
   const heroRef = useReveal();
+  const tiltRef = useTilt(7);
 
   useEffect(() => {
     const { hash } = window.location;
@@ -51,15 +54,38 @@ const HomePage = () => {
       <section
         id="inicio"
         ref={heroRef}
-        className="reveal mx-auto flex max-w-300 flex-wrap items-center gap-12 px-5 py-[clamp(40px,7vw,96px)] sm:px-8 lg:px-12"
+        className="reveal mx-auto grid max-w-300 items-center gap-x-10 gap-y-14 px-5 py-[clamp(48px,8vw,112px)] sm:px-8 lg:grid-cols-12 lg:px-12"
       >
-        <div className="flex flex-[1_1_480px] flex-col gap-7">
-          <p className="font-mono text-sm uppercase tracking-[0.08em] text-accent">
-            Desarrolladora Frontend · Web y Mobile
+        <div className="flex flex-col gap-7 lg:col-span-7">
+          <p className="font-mono text-xs uppercase tracking-[0.08em] text-accent sm:text-sm">
+            <span className="text-muted">{"//"}</span> Desarrolladora Frontend
+            · Web y Mobile
           </p>
-          <h1 className="font-display text-[clamp(38px,11vw,72px)] lg:text-[clamp(64px,7vw,92px)] font-bold leading-[0.98] tracking-[-0.03em]">
-            Apps web y móviles que{" "}
-            <span className="text-warm">llegan a producción</span>.
+          <h1 className="font-display text-[clamp(40px,11.5vw,76px)] font-bold leading-[0.95] tracking-tighter lg:text-[clamp(60px,7vw,100px)]">
+            Apps web y móviles que llegan a{" "}
+            <span className="relative inline-block text-warm">
+              producción
+              <svg
+                className="absolute bottom-[-0.14em] left-0 h-[0.16em] w-full overflow-visible"
+                viewBox="0 0 300 12"
+                preserveAspectRatio="none"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  className="animate-draw motion-reduce:animate-none motion-reduce:[stroke-dashoffset:0]"
+                  d="M2 8 C 45 2, 85 11, 130 6 S 215 3, 298 7"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  pathLength="1"
+                  strokeDasharray="1"
+                  strokeDashoffset="1"
+                  vectorEffect="non-scaling-stroke"
+                />
+              </svg>
+            </span>
+            .
           </h1>
           <p className="max-w-135 text-lg leading-[1.55] text-muted sm:text-xl">
             Soy Sandra. Desarrollo frontend con React Native, Vue 3 y React,
@@ -69,14 +95,16 @@ const HomePage = () => {
           <div className="flex flex-wrap items-center gap-4">
             <a
               href="mailto:rreyes.sandra@gmail.com"
-              className="inline-flex items-center gap-2.5 rounded-full bg-accent px-6.5 py-3.75 font-semibold text-on-accent hover:brightness-110"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-accent px-6.5 py-3.75 font-semibold text-on-accent hover:brightness-110"
             >
               Contacta conmigo
-              <ArrowUpRightIcon />
+              <span className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
+                <ArrowUpRightIcon />
+              </span>
             </a>
             <a
               href="#experiencia"
-              className="inline-flex items-center rounded-full border border-line px-6.5 py-3.5 font-semibold hover:text-accent"
+              className="inline-flex items-center rounded-full border border-line px-6.5 py-3.5 font-semibold transition-colors hover:border-accent hover:text-accent"
             >
               Ver experiencia
             </a>
@@ -101,40 +129,75 @@ const HomePage = () => {
               </a>
             </div>
           </div>
-          <p className="flex items-center gap-2.5 font-mono text-sm text-muted">
-            <span
-              className="size-2 rounded-full bg-warm"
-              aria-hidden="true"
-            ></span>
-            Disponibilidad inmediata · España (remoto)
-          </p>
         </div>
-        <div className="mx-auto max-w-115 flex-[1_1_340px]">
-          <div className="flex justify-center overflow-hidden rounded-[36px] bg-accent px-6 pt-10">
-            <img
-              className="h-auto w-full max-w-100"
-              src={front}
-              alt="Ilustración de Sandra trabajando con su portátil"
-            />
+        <div className="mx-auto w-full max-w-105 lg:col-span-5">
+          <div
+            ref={tiltRef}
+            className="relative transition-transform duration-200 ease-out"
+          >
+            <div
+              className="absolute inset-0 translate-x-3 translate-y-3 border border-accent/40"
+              aria-hidden="true"
+            ></div>
+            {/* Hueco reservado para la nueva imagen */}
+            <div className="relative aspect-square bg-accent"></div>
+            <Corners />
+            <p
+              className="absolute left-3 top-3 font-mono text-xs text-on-accent/70"
+              aria-hidden="true"
+            >
+              fig. 01
+            </p>
+            <p
+              className="absolute -right-2 top-8 border border-line bg-card px-3 py-2 font-mono text-xs text-muted shadow-xl shadow-black/40 max-sm:hidden"
+              aria-hidden="true"
+            >
+              <span className="text-accent">{"<App"}</span> targets=
+              <span className="text-warm">{'"iOS · Android · Web"'}</span>{" "}
+              <span className="text-accent">{"/>"}</span>
+            </p>
+            <p className="absolute -left-2 bottom-6 flex items-center gap-3 border border-line bg-card px-4 py-3 text-sm shadow-xl shadow-black/40 sm:-left-5">
+              <span className="relative flex size-2.5" aria-hidden="true">
+                <span className="absolute inset-0 animate-ping-slow rounded-full bg-warm motion-reduce:animate-none"></span>
+                <span className="relative size-2.5 rounded-full bg-warm"></span>
+              </span>
+              <span className="flex flex-col leading-tight">
+                <span className="font-semibold">Disponibilidad inmediata</span>
+                <span className="font-mono text-xs text-muted">
+                  España · remoto
+                </span>
+              </span>
+            </p>
           </div>
         </div>
       </section>
-      <section aria-label="Stack" className="border-y border-line">
-        <ul className="mx-auto flex max-w-300 flex-wrap gap-x-3 gap-y-2.5 px-5 py-7 font-mono text-sm sm:px-8 lg:px-12">
+      <section
+        aria-label="Stack"
+        className="flex flex-col gap-5 border-y border-line py-9"
+      >
+        <Marquee>
           {mainStack.map((tech) => (
             <li
               key={tech}
-              className="rounded-full border border-accent px-4 py-2"
+              className="flex items-center gap-8 whitespace-nowrap pr-8 font-display text-[clamp(36px,6vw,80px)] font-bold leading-none tracking-tight motion-reduce:pb-3"
+            >
+              {tech}
+              <span className="text-warm">
+                <StarIcon size={28} />
+              </span>
+            </li>
+          ))}
+        </Marquee>
+        <Marquee reverse>
+          {stack.map((tech) => (
+            <li
+              key={tech}
+              className="mr-3 whitespace-nowrap rounded-full border border-line px-4 py-2 font-mono text-sm text-muted motion-reduce:mb-2.5"
             >
               {tech}
             </li>
           ))}
-          {stack.map((tech) => (
-            <li key={tech} className="rounded-full border border-line px-4 py-2">
-              {tech}
-            </li>
-          ))}
-        </ul>
+        </Marquee>
       </section>
       <About />
       <Experience />
