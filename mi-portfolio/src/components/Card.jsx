@@ -1,51 +1,43 @@
-import { useState } from "react";
+import { ArrowUpRightIcon } from "./Icons.jsx";
 
-import RepoButton from "./RepoButton.jsx";
-import TechBalloon from "./TechBalloon.jsx";
-import DemoButton from "./DemoButton.jsx";
-
-const Card = ({ title, description, images, tech, repoLink, demoLink }) => {
-  const [hovered, setHovered] = useState(false);
-  const [currentImage, setCurrentImage] = useState(
-    images && images.length > 0 ? images[0] : null
-  );
-
-  const handleHover = () => {
-    setHovered(true);
-  };
-
-  const handleLeave = () => {
-    setHovered(false);
-    setCurrentImage(images && images.length > 0 ? images[0] : null);
-  };
-
+const CardLink = ({ href, children }) => {
   return (
-    <section
-      className="flex flex-col max-w-sm m-2 bg-white border border-gray-200 rounded-[50px] shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:border-blue-200 hover:shadow-blue-100"
-      onMouseEnter={handleHover}
-      onMouseLeave={handleLeave}
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-1.5 py-3 text-[15px] font-semibold hover:text-accent"
     >
-      <img
-        className="rounded-lg object-cover px-4 pt-4"
-        src={hovered && images && images.length > 1 ? images[1] : currentImage}
-        alt={`Imagen de ${title}`}
-      />
-      <div className="grow px-5">
-        <h2 className="m-2 text-2xl font-semibold tracking-tight text-gray-800">
+      {children}
+      <ArrowUpRightIcon size={16} />
+    </a>
+  );
+};
+
+const Card = ({ title, label, description, image, tech, repoLink, demoLink }) => {
+  return (
+    <article className="flex flex-col gap-1 rounded-[28px] border border-line bg-card p-3 transition duration-300 hover:-translate-y-1 hover:border-accent/60 motion-reduce:transition-none">
+      <div className="aspect-4/3 overflow-hidden rounded-[18px] bg-white">
+        <img
+          className="size-full object-contain"
+          src={image}
+          alt={`Captura de ${title}`}
+          loading="lazy"
+        />
+      </div>
+      <div className="flex grow flex-col gap-3 px-3 pb-3 pt-4">
+        <p className="font-mono text-[13px] text-warm">{label}</p>
+        <h3 className="font-display text-[26px] font-bold leading-[1.1] tracking-[-0.01em]">
           {title}
-        </h2>
-        <p className="m-2 font-normal text-gray-600">{description}</p>
-        <div className="flex flex-wrap justify-start">
-          {tech && Array.isArray(tech)
-            ? tech.map((t, index) => <TechBalloon key={index} tech={t} />)
-            : null}
+        </h3>
+        <p className="grow text-base">{description}</p>
+        <p className="font-mono text-[13px] text-muted">{tech.join(" · ")}</p>
+        <div className="flex gap-5 border-t border-line pt-1">
+          {demoLink && <CardLink href={demoLink}>Demo</CardLink>}
+          <CardLink href={repoLink}>Repositorio</CardLink>
         </div>
       </div>
-      <div className="flex justify-end py-5 pe-5 gap-8">
-        <RepoButton repoLink={repoLink} />
-        <DemoButton demoLink={demoLink} />
-      </div>
-    </section>
+    </article>
   );
 };
 

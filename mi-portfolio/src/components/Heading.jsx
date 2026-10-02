@@ -1,10 +1,11 @@
-const Heading = ({ children, className }) => {
+const Heading = ({ label, children }) => {
   return (
-    <h1
-      className={`text-xl md:text-2xl my-20 pb-2 text-start text-gray-800 font-semibold border-b border-blue-300 mx-auto ${className}`}
-    >
-      {children}
-    </h1>
+    <div className="flex flex-col gap-5">
+      <p className="font-mono text-sm text-muted">{label}</p>
+      <h2 className="font-display text-[clamp(34px,4.6vw,60px)] font-bold leading-[1.02] tracking-tight">
+        {children}
+      </h2>
+    </div>
   );
 };
 

@@ -1,9 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import HomePage from "../views/HomePage.jsx";
-import About from "../views/About.jsx";
-import Projects from "../views/Projects.jsx";
-import Contact from "../views/Contact.jsx";
 import ErrorPage from "../views/ErrorPage.jsx";
 
 import Navbar from "../components/Navbar.jsx";
@@ -15,9 +12,12 @@ const Router = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<Navigate to="/#sobre-mi" replace />} />
+        <Route
+          path="/projects"
+          element={<Navigate to="/#proyectos" replace />}
+        />
+        <Route path="/contact" element={<Navigate to="/#contacto" replace />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
