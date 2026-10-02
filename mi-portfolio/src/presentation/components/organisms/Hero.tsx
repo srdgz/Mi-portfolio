@@ -121,8 +121,8 @@ const Hero = () => {
           </p>
           <p className="absolute bottom-6 -left-2 flex items-center gap-3 border border-line bg-card px-4 py-3 text-sm shadow-xl shadow-shadow/40 sm:-left-5">
             <span className="relative flex size-2.5" aria-hidden="true">
-              <span className="absolute inset-0 animate-ping-slow rounded-full bg-warm motion-reduce:animate-none"></span>
-              <span className="relative size-2.5 rounded-full bg-warm"></span>
+              <span className="absolute inset-0 animate-ping-slow rounded-full bg-green-500 motion-reduce:animate-none"></span>
+              <span className="relative size-2.5 rounded-full bg-green-500"></span>
             </span>
             <span className="font-semibold">{t.hero.availability}</span>
           </p>
