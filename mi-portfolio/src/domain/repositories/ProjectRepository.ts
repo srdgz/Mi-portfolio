@@ -1,5 +1,6 @@
+import type { Locale } from "@/domain/entities/locale";
 import type { Project } from "@/domain/entities/project";
 
 export interface ProjectRepository {
-  getAll: () => Project[];
+  getAll: (locale: Locale) => Project[];
 }

@@ -1,12 +1,13 @@
 import { getExperience } from "@/container";
 import Tag from "@/presentation/components/atoms/Tag";
 import Heading from "@/presentation/components/molecules/Heading";
+import useLanguage from "@/presentation/hooks/useLanguage";
 import useReveal from "@/presentation/hooks/useReveal";
-
-const jobs = getExperience();
 
 const Experience = () => {
   const ref = useReveal();
+  const { locale, t } = useLanguage();
+  const jobs = getExperience(locale);
 
   return (
     <section
@@ -14,8 +15,8 @@ const Experience = () => {
       ref={ref}
       className="reveal mx-auto flex max-w-300 flex-col gap-12 px-5 pb-[clamp(64px,9vw,128px)] sm:px-8 lg:px-12"
     >
-      <Heading number="02" label="Experiencia">
-        Dónde he trabajado.
+      <Heading number="02" label={t.experience.label}>
+        {t.experience.title}
       </Heading>
       <ol className="flex flex-col border-b border-line">
         {jobs.map(({ period, company, role, summary, highlights, tech }) => (
@@ -29,7 +30,7 @@ const Experience = () => {
                 {company}
               </h3>
               <p className="font-mono text-[13px] text-muted">
-                {role} · Remoto
+                {role} · {t.experience.remote}
               </p>
             </div>
             <div className="flex flex-col gap-5">

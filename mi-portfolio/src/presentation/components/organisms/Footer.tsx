@@ -1,8 +1,10 @@
 import { getProfile } from "@/container";
-
-const { name, email, linkedinUrl, githubUrl } = getProfile();
+import useLanguage from "@/presentation/hooks/useLanguage";
 
 const Footer = () => {
+  const { locale } = useLanguage();
+  const { name, email, linkedinUrl, githubUrl } = getProfile(locale);
+
   return (
     <footer className="overflow-hidden border-t border-line">
       <p

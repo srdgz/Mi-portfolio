@@ -5,14 +5,15 @@ import {
   GithubIcon,
   LinkedinIcon,
 } from "@/presentation/components/atoms/Icons";
+import useLanguage from "@/presentation/hooks/useLanguage";
 import useReveal from "@/presentation/hooks/useReveal";
 import useTilt from "@/presentation/hooks/useTilt";
-
-const profile = getProfile();
 
 const Hero = () => {
   const revealRef = useReveal();
   const tiltRef = useTilt(7);
+  const { locale, t } = useLanguage();
+  const profile = getProfile(locale);
 
   return (
     <section
@@ -22,13 +23,12 @@ const Hero = () => {
     >
       <div className="flex flex-col gap-7 lg:col-span-7">
         <p className="font-mono text-xs tracking-[0.08em] text-accent uppercase sm:text-sm">
-          <span className="text-muted">{"//"}</span> Desarrolladora Frontend ·
-          Web y Mobile
+          <span className="text-muted">{"//"}</span> {t.hero.kicker}
         </p>
         <h1 className="font-display text-[clamp(40px,11.5vw,76px)] leading-[0.95] font-bold tracking-tighter lg:text-[clamp(60px,7vw,100px)]">
-          Apps web y móviles que llegan a{" "}
+          {t.hero.titleStart}{" "}
           <span className="relative inline-block text-warm">
-            producción
+            {t.hero.titleHighlight}
             <svg
               className="absolute bottom-[-0.14em] left-0 h-[0.16em] w-full animate-draw overflow-visible motion-reduce:animate-none"
               viewBox="0 0 300 12"
@@ -48,16 +48,14 @@ const Hero = () => {
           .
         </h1>
         <p className="max-w-135 text-lg leading-[1.55] text-muted sm:text-xl">
-          Soy Sandra. Desarrollo frontend con React Native, Vue 3 y React,
-          siempre con TypeScript. He trabajado en apps publicadas en App Store y
-          Google Play, con pagos y suscripciones.
+          {t.hero.intro}
         </p>
         <div className="flex flex-wrap items-center gap-4">
           <a
             href={`mailto:${profile.email}`}
             className="group inline-flex items-center gap-2.5 rounded-full bg-accent px-6.5 py-3.75 font-semibold text-on-accent hover:brightness-110"
           >
-            Contacta conmigo
+            {t.hero.contact}
             <span className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
               <ArrowUpRightIcon />
             </span>
@@ -66,7 +64,7 @@ const Hero = () => {
             href="#experiencia"
             className="inline-flex items-center rounded-full border border-line px-6.5 py-3.5 font-semibold transition-colors hover:border-accent hover:text-accent"
           >
-            Ver experiencia
+            {t.hero.experience}
           </a>
           <div className="flex gap-1">
             <a
@@ -74,7 +72,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex size-12 items-center justify-center hover:text-accent"
-              aria-label="Perfil de LinkedIn de Sandra Rodríguez"
+              aria-label={t.hero.linkedin}
             >
               <LinkedinIcon size={22} />
             </a>
@@ -83,7 +81,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex size-12 items-center justify-center hover:text-accent"
-              aria-label="Perfil de GitHub de Sandra Rodríguez"
+              aria-label={t.hero.github}
             >
               <GithubIcon size={22} />
             </a>
@@ -102,7 +100,7 @@ const Hero = () => {
           <img
             className="relative aspect-4/5 w-full object-cover object-[center_15%]"
             src={profile.photo}
-            alt={`Retrato de ${profile.name}`}
+            alt={t.hero.photoAlt}
             width="1086"
             height="1448"
           />
@@ -126,12 +124,7 @@ const Hero = () => {
               <span className="absolute inset-0 animate-ping-slow rounded-full bg-warm motion-reduce:animate-none"></span>
               <span className="relative size-2.5 rounded-full bg-warm"></span>
             </span>
-            <span className="flex flex-col leading-tight">
-              <span className="font-semibold">Disponibilidad inmediata</span>
-              <span className="font-mono text-xs text-muted">
-                España · remoto
-              </span>
-            </span>
+            <span className="font-semibold">{t.hero.availability}</span>
           </p>
         </div>
       </div>

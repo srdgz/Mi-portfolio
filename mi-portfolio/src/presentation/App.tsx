@@ -3,11 +3,12 @@ import { Analytics } from "@vercel/analytics/react";
 
 import GridBg from "@/presentation/components/atoms/GridBg";
 import ScrollProgress from "@/presentation/components/atoms/ScrollProgress";
+import LanguageProvider from "@/presentation/i18n/LanguageProvider";
 import Router from "@/presentation/routes/router";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Toaster
         position="bottom-center"
         toastOptions={{
@@ -22,7 +23,7 @@ function App() {
       <ScrollProgress />
       <Router />
       <Analytics />
-    </>
+    </LanguageProvider>
   );
 }
 
