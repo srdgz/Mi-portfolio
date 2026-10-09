@@ -4,6 +4,8 @@ import { createProject } from "@/domain/entities/project";
 import type { Project } from "@/domain/entities/project";
 import type { ProjectRepository } from "@/domain/repositories/ProjectRepository";
 
+import ApplyTrackDesktop from "@/assets/projects/ApplyTrackDesktop.png";
+import ApplyTrackMobile from "@/assets/projects/ApplyTrackMobile.png";
 import RoomiesDesktop from "@/assets/projects/RoomiesDesktop.png";
 import RoomiesMobile from "@/assets/projects/RoomiesMobile.png";
 import FrescaGoDesktop from "@/assets/projects/FrescaGoDesktop.png";
@@ -32,6 +34,34 @@ interface ProjectSource {
 }
 
 const sources: ProjectSource[] = [
+  {
+    title: "ApplyTrack",
+    desktopImage: ApplyTrackDesktop,
+    mobileImage: ApplyTrackMobile,
+    url: "applytrack-roan.vercel.app",
+    tech: [
+      "Vue 3",
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+    ],
+    repoLink: "https://github.com/srdgz/applytrack",
+    demoLink: "https://applytrack-roan.vercel.app/",
+    text: {
+      es: {
+        label: "Web y móvil",
+        description:
+          "Gestor de candidaturas de empleo con web y app móvil que comparten un núcleo con arquitectura hexagonal: tablero por estados, estadísticas, modo demo sin registro y cuentas con Supabase.",
+      },
+      en: {
+        label: "Web & mobile",
+        description:
+          "Job application tracker with a web and a mobile app sharing a hexagonal core: status board, stats, a no-signup demo mode and Supabase accounts.",
+      },
+    },
+  },
   {
     title: "FrescaGo",
     desktopImage: FrescaGoDesktop,
