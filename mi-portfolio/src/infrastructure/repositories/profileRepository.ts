@@ -17,7 +17,7 @@ const profiles: Record<Locale, Profile> = {
   es: createProfile({
     ...common,
     cvUrl:
-      "https://drive.google.com/file/d/1z5lsXxu-4wA-q-d3QaZlCEsF9rnUmz1j/view?usp=sharing",
+      "https://drive.google.com/file/d/1XCBxq21NG6GFvq2IbjOCxQVr6h8Wa1zh/view?usp=sharing",
     specs: [
       { term: "Rol", detail: "Frontend · Web y Mobile" },
       { term: "Stack", detail: "React Native, Vue 3, React + TypeScript" },
@@ -29,7 +29,7 @@ const profiles: Record<Locale, Profile> = {
   en: createProfile({
     ...common,
     cvUrl:
-      "https://drive.google.com/file/d/1_QyptwUYrtT-Y9NIIbxSzA44vNOPFqmb/view?usp=sharing",
+      "https://drive.google.com/file/d/1RGxZT1LZ1UbCc1-nu7XBufvWBPLibotn/view?usp=sharing",
     specs: [
       { term: "Role", detail: "Frontend · Web & Mobile" },
       { term: "Stack", detail: "React Native, Vue 3, React + TypeScript" },
