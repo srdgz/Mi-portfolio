@@ -88,19 +88,26 @@ const sources: ProjectSource[] = [
     desktopImage: SmartStayDesktop,
     mobileImage: SmartStayMobile,
     url: "smartstay.vercel.app",
-    tech: ["Next.js", "Sanity", "Tailwind CSS", "Stripe"],
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Sanity",
+      "Stripe",
+      "Tailwind CSS",
+    ],
     repoLink: "https://github.com/srdgz/smartstay",
     demoLink: "https://smartstay.vercel.app/",
     text: {
       es: {
         label: "Web",
         description:
-          "Reserva de alojamientos con pago mediante Stripe, reviews y panel de usuario para gestionar las reservas.",
+          "Reserva de alojamientos bilingüe (ES/EN) con precios en USD/EUR, búsqueda por fechas disponibles, pago con Stripe, foto de perfil y reseñas, con arquitectura limpia, tests y CI.",
       },
       en: {
         label: "Web",
         description:
-          "Accommodation booking with Stripe payments, reviews and a user dashboard to manage bookings.",
+          "Bilingual (ES/EN) accommodation booking with USD/EUR pricing, availability search by dates, Stripe payments, profile photos and reviews, built with clean architecture, tests and CI.",
       },
     },
   },
