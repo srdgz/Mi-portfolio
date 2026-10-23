@@ -102,12 +102,12 @@ const sources: ProjectSource[] = [
       es: {
         label: "Web",
         description:
-          "Reserva de alojamientos bilingüe (ES/EN) con precios en USD/EUR, búsqueda por fechas disponibles, pago con Stripe, foto de perfil y reseñas, con arquitectura limpia, tests y CI.",
+          "Reserva de alojamientos bilingüe con precios en USD/EUR, búsqueda por fechas disponibles, pago con Stripe, perfil de usuario y reseñas, con clean architecture, tests y CI.",
       },
       en: {
         label: "Web",
         description:
-          "Bilingual (ES/EN) accommodation booking with USD/EUR pricing, availability search by dates, Stripe payments, profile photos and reviews, built with clean architecture, tests and CI.",
+          "Bilingual accommodation booking with USD/EUR pricing, availability search by dates, Stripe payments, user profile and reviews, built with clean architecture, tests and CI.",
       },
     },
   },
