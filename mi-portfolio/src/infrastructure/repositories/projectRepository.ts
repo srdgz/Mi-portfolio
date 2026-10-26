@@ -81,12 +81,12 @@ const sources: ProjectSource[] = [
       es: {
         label: "Web",
         description:
-          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, envío gratis desde 30 €, pago con Stripe verificado en el backend y pedidos por usuario, con clean architecture, tests y accesibilidad WCAG.",
+          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, pago con Stripe verificado en el backend y pedidos por usuario, con clean architecture, tests y accesibilidad WCAG.",
       },
       en: {
         label: "Web",
         description:
-          "Bilingual online grocery shop with EUR/USD pricing, free shipping over €30, Stripe payments verified on the backend and per-user orders, built with clean architecture, tests and WCAG accessibility.",
+          "Bilingual online grocery shop with EUR/USD pricing, Stripe payments verified on the backend and per-user orders, built with clean architecture, tests and WCAG accessibility.",
       },
     },
   },
