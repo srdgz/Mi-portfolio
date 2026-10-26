@@ -67,19 +67,26 @@ const sources: ProjectSource[] = [
     desktopImage: FrescaGoDesktop,
     mobileImage: FrescaGoMobile,
     url: "frescago.vercel.app",
-    tech: ["React", "Tailwind CSS", "Node.js", "Firebase", "Stripe"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Firebase",
+      "Stripe",
+      "Tailwind CSS",
+    ],
     repoLink: "https://github.com/srdgz/frescaGo",
     demoLink: "https://frescago.vercel.app/",
     text: {
       es: {
         label: "Web",
         description:
-          "E-commerce con una experiencia de compra en línea completa, incluidos los pagos.",
+          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, envío gratis desde 30 €, pago con Stripe verificado en el backend y pedidos por usuario, con clean architecture, tests y accesibilidad WCAG.",
       },
       en: {
         label: "Web",
         description:
-          "E-commerce with a complete online shopping experience, including payments.",
+          "Bilingual online grocery shop with EUR/USD pricing, free shipping over €30, Stripe payments verified on the backend and per-user orders, built with clean architecture, tests and WCAG accessibility.",
       },
     },
   },
