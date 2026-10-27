@@ -17,7 +17,7 @@ const profiles: Record<Locale, Profile> = {
   es: createProfile({
     ...common,
     cvUrl:
-      "https://drive.google.com/file/d/1XCBxq21NG6GFvq2IbjOCxQVr6h8Wa1zh/view?usp=sharing",
+      "https://drive.google.com/file/d/1rLKtZ-WRJhqKXV58V7qNShobeafbhh0m/view?usp=sharing",
     specs: [
       { term: "Rol", detail: "Fullstack · Web, Mobile y Backend" },
       {
@@ -32,7 +32,7 @@ const profiles: Record<Locale, Profile> = {
   en: createProfile({
     ...common,
     cvUrl:
-      "https://drive.google.com/file/d/1RGxZT1LZ1UbCc1-nu7XBufvWBPLibotn/view?usp=sharing",
+      "https://drive.google.com/file/d/1p3QAcikEFiWyS1PB2UFxT4JIyTNqlh7p/view?usp=sharing",
     specs: [
       { term: "Role", detail: "Fullstack · Web, Mobile & Backend" },
       {

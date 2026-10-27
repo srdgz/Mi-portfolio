@@ -63,12 +63,12 @@ const sources: ProjectSource[] = [
       es: {
         label: "Fullstack · Web",
         description:
-          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, pagos con Stripe verificados en un backend con Node.js y Express, y pedidos por usuario. Con clean architecture, accesibilidad WCAG, tests y CI.",
+          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, API REST en Node.js y Express (catálogo, tipos de cambio y pago con Stripe verificado en el servidor) y Firebase para autenticación y pedidos. Con clean architecture, accesibilidad WCAG, tests y CI.",
       },
       en: {
         label: "Fullstack · Web",
         description:
-          "Bilingual online grocery shop with EUR/USD pricing, Stripe payments verified on a Node.js and Express backend, and per-user orders. Built with clean architecture, WCAG accessibility, tests and CI.",
+          "Bilingual online grocery shop with EUR/USD pricing, a Node.js and Express REST API (catalogue, exchange rates and Stripe payments verified on the server) and Firebase for sign-in and orders. Built with clean architecture, WCAG accessibility, tests and CI.",
       },
     },
   },
@@ -84,12 +84,12 @@ const sources: ProjectSource[] = [
       es: {
         label: "Fullstack · Web",
         description:
-          "Reserva de alojamientos con API REST en Next.js (disponibilidad, reservas y reseñas), acceso con NextAuth (OAuth), Sanity como CMS y pagos con Stripe con webhook verificado. Bilingüe, con arquitectura por capas, tests (también de accesibilidad) y CI.",
+          "Reserva de alojamientos con API REST en Next.js (disponibilidad, reservas y reseñas), acceso con NextAuth (email y contraseña, y OAuth con Google y GitHub), Sanity como CMS y pagos con Stripe con webhook verificado. Bilingüe, con arquitectura por capas, tests (también de accesibilidad) y CI.",
       },
       en: {
         label: "Fullstack · Web",
         description:
-          "Accommodation booking with a Next.js REST API (availability, bookings and reviews), NextAuth (OAuth) sign-in, Sanity as CMS and Stripe payments with a verified webhook. Bilingual, with a layered architecture, tests (including accessibility) and CI.",
+          "Accommodation booking with a Next.js REST API (availability, bookings and reviews), NextAuth sign-in (email and password, and OAuth with Google and GitHub), Sanity as CMS and Stripe payments with a verified webhook. Bilingual, with a layered architecture, tests (including accessibility) and CI.",
       },
     },
   },
