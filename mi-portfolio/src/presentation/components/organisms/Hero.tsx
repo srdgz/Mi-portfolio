@@ -116,7 +116,7 @@ const Hero = () => {
             aria-hidden="true"
           >
             <span className="text-accent">{"<App"}</span> targets=
-            <span className="text-warm">{'"iOS · Android · Web"'}</span>{" "}
+            <span className="text-warm">{'"Web · Mobile · Backend"'}</span>{" "}
             <span className="text-accent">{"/>"}</span>
           </p>
           <p className="absolute bottom-6 -left-2 flex items-center gap-3 border border-line bg-card px-4 py-3 text-sm shadow-xl shadow-shadow/40 sm:-left-5">

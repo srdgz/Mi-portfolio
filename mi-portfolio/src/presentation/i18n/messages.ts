@@ -2,9 +2,10 @@ import type { Locale } from "@/domain/entities/locale";
 
 const es = {
   meta: {
-    title: "Sandra Rodríguez | Desarrolladora Frontend · Web y Mobile",
+    title:
+      "Sandra Rodríguez | Desarrolladora Fullstack · Web, Mobile y Backend",
     description:
-      "Soy Sandra Rodríguez, desarrolladora frontend web y móvil. Trabajo con React Native, Vue 3, React y TypeScript. Explora mi portfolio para conocer mi experiencia y mis proyectos.",
+      "Soy Sandra Rodríguez, desarrolladora fullstack. Construyo aplicaciones web y móviles con Vue 3, React, React Native y TypeScript, y APIs con Node.js y Python. Explora mi portfolio para conocer mi experiencia y mis proyectos.",
   },
   language: {
     label: "Idioma",
@@ -34,11 +35,11 @@ const es = {
     ariaLabel: "Descargar currículum vitae",
   },
   hero: {
-    kicker: "Desarrolladora Frontend · Web y Mobile",
+    kicker: "Desarrolladora Fullstack · Web, Mobile y Backend",
     titleStart: "Apps web y móviles que llegan a",
     titleHighlight: "producción",
     intro:
-      "Soy Sandra. Desarrollo frontend con React Native, Vue 3 y React, siempre con TypeScript. He trabajado en apps publicadas en App Store y Google Play, con pagos y suscripciones.",
+      "Soy Sandra. Desarrollo aplicaciones web y móviles de principio a fin: interfaces con Vue 3, React y React Native, y backend con Node.js, Python y PostgreSQL, siempre con TypeScript. He llevado apps a App Store y Google Play, con pagos y suscripciones.",
     contact: "Contacta conmigo",
     experience: "Ver experiencia",
     linkedin: "Perfil de LinkedIn de Sandra Rodríguez",
@@ -55,10 +56,10 @@ const es = {
     leadEnd:
       "trabajando como desarrolladora, siempre en posiciones de alto impacto y en productos punteros.",
     field:
-      "Mi terreno es el frontend web y móvil: apps en producción con pagos y suscripciones (Stripe, RevenueCat), publicación en App Store y Google Play, y despliegue continuo con GitHub Actions y AWS Amplify.",
+      "Trabajo en todo el producto. En frontend, apps web y móviles en producción con pagos y suscripciones (Stripe, RevenueCat) y publicadas en App Store y Google Play. En backend, APIs REST y servicios con Node.js y Python, funciones serverless en AWS Lambda y bases de datos como PostgreSQL, Supabase y DynamoDB. Y despliegue continuo con GitHub Actions y AWS Amplify.",
     method:
       "En el último año me he apoyado en Spec-Driven Development (SDD) con Claude Code en todas las fases: spec técnica, implementación, testing y documentación.",
-    goal: "Busco aportar mi experiencia como desarrolladora frontend web y móvil en proyectos innovadores que me permitan crecer profesionalmente.",
+    goal: "Busco aportar mi experiencia como desarrolladora fullstack en proyectos innovadores que me permitan crecer profesionalmente.",
     specSheet: "Ficha técnica",
   },
   experience: {
@@ -98,9 +99,9 @@ export type Messages = typeof es;
 
 const en: Messages = {
   meta: {
-    title: "Sandra Rodríguez | Frontend Developer · Web & Mobile",
+    title: "Sandra Rodríguez | Fullstack Developer · Web, Mobile & Backend",
     description:
-      "I'm Sandra Rodríguez, a web and mobile frontend developer. I work with React Native, Vue 3, React and TypeScript. Explore my portfolio to see my experience and projects.",
+      "I'm Sandra Rodríguez, a fullstack developer. I build web and mobile apps with Vue 3, React, React Native and TypeScript, and APIs with Node.js and Python. Explore my portfolio to see my experience and projects.",
   },
   language: {
     label: "Language",
@@ -130,11 +131,11 @@ const en: Messages = {
     ariaLabel: "Download curriculum vitae",
   },
   hero: {
-    kicker: "Frontend Developer · Web & Mobile",
+    kicker: "Fullstack Developer · Web, Mobile & Backend",
     titleStart: "Web and mobile apps that make it to",
     titleHighlight: "production",
     intro:
-      "I'm Sandra. I build frontends with React Native, Vue 3 and React, always with TypeScript. I've worked on apps published on the App Store and Google Play, with payments and subscriptions.",
+      "I'm Sandra. I build web and mobile apps end to end: interfaces with Vue 3, React and React Native, and backends with Node.js, Python and PostgreSQL, always with TypeScript. I've shipped apps to the App Store and Google Play, with payments and subscriptions.",
     contact: "Get in touch",
     experience: "See experience",
     linkedin: "Sandra Rodríguez's LinkedIn profile",
@@ -151,10 +152,10 @@ const en: Messages = {
     leadEnd:
       "working as a developer, always in high-impact roles and on leading products.",
     field:
-      "My field is web and mobile frontend: production apps with payments and subscriptions (Stripe, RevenueCat), releases on the App Store and Google Play, and continuous deployment with GitHub Actions and AWS Amplify.",
+      "I work across the whole product. On the frontend, production web and mobile apps with payments and subscriptions (Stripe, RevenueCat), published on the App Store and Google Play. On the backend, REST APIs and services with Node.js and Python, serverless functions on AWS Lambda and databases such as PostgreSQL, Supabase and DynamoDB. And continuous deployment with GitHub Actions and AWS Amplify.",
     method:
       "Over the last year I've relied on Spec-Driven Development (SDD) with Claude Code across every phase: technical spec, implementation, testing and documentation.",
-    goal: "I'm looking to bring my experience as a web and mobile frontend developer to innovative projects where I can keep growing professionally.",
+    goal: "I'm looking to bring my experience as a fullstack developer to innovative projects where I can keep growing professionally.",
     specSheet: "Spec sheet",
   },
   experience: {

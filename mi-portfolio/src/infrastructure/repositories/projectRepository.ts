@@ -35,26 +35,19 @@ const sources: ProjectSource[] = [
     desktopImage: ApplyTrackDesktop,
     mobileImage: ApplyTrackMobile,
     url: "applytrack-roan.vercel.app",
-    tech: [
-      "Vue 3",
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Supabase",
-      "Tailwind CSS",
-    ],
+    tech: ["Vue 3", "React Native", "TypeScript", "Supabase", "PostgreSQL"],
     repoLink: "https://github.com/srdgz/applytrack",
     demoLink: "https://applytrack-roan.vercel.app/",
     text: {
       es: {
-        label: "Web y móvil",
+        label: "Fullstack · Web y móvil",
         description:
-          "Gestor de candidaturas de empleo con web y app móvil que comparten un núcleo con arquitectura hexagonal: tablero por estados, estadísticas, modo demo sin registro y cuentas con Supabase.",
+          "Gestor de candidaturas con web en Vue 3 y app en React Native que comparten un núcleo con arquitectura hexagonal. Backend en Supabase con esquema SQL propio (políticas RLS, funciones y trigger), acceso por enlace mágico, accesibilidad WCAG 2.2 AA, tests y CI.",
       },
       en: {
-        label: "Web & mobile",
+        label: "Fullstack · Web & mobile",
         description:
-          "Job application tracker with a web and a mobile app sharing a hexagonal core: status board, stats, a no-signup demo mode and Supabase accounts.",
+          "Job application tracker with a Vue 3 web app and a React Native app sharing a hexagonal core. Supabase backend with its own SQL schema (RLS policies, functions and a trigger), magic-link sign-in, WCAG 2.2 AA accessibility, tests and CI.",
       },
     },
   },
@@ -63,26 +56,19 @@ const sources: ProjectSource[] = [
     desktopImage: FrescaGoDesktop,
     mobileImage: FrescaGoMobile,
     url: "frescago.vercel.app",
-    tech: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Firebase",
-      "Stripe",
-      "Tailwind CSS",
-    ],
+    tech: ["React", "TypeScript", "Node.js", "Express", "Firebase", "Stripe"],
     repoLink: "https://github.com/srdgz/frescaGo",
     demoLink: "https://frescago.vercel.app/",
     text: {
       es: {
-        label: "Web",
+        label: "Fullstack · Web",
         description:
-          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, pago con Stripe verificado en el backend y pedidos por usuario, con clean architecture, tests y accesibilidad WCAG.",
+          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, pagos con Stripe verificados en un backend con Node.js y Express, y pedidos por usuario. Con clean architecture, accesibilidad WCAG y tests.",
       },
       en: {
-        label: "Web",
+        label: "Fullstack · Web",
         description:
-          "Bilingual online grocery shop with EUR/USD pricing, Stripe payments verified on the backend and per-user orders, built with clean architecture, tests and WCAG accessibility.",
+          "Bilingual online grocery shop with EUR/USD pricing, Stripe payments verified on a Node.js and Express backend, and per-user orders. Built with clean architecture, WCAG accessibility and tests.",
       },
     },
   },
@@ -91,26 +77,19 @@ const sources: ProjectSource[] = [
     desktopImage: SmartStayDesktop,
     mobileImage: SmartStayMobile,
     url: "smartstay.vercel.app",
-    tech: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Sanity",
-      "Stripe",
-      "Tailwind CSS",
-    ],
+    tech: ["Next.js", "TypeScript", "API REST", "NextAuth", "Sanity", "Stripe"],
     repoLink: "https://github.com/srdgz/smartstay",
     demoLink: "https://smartstay.vercel.app/",
     text: {
       es: {
-        label: "Web",
+        label: "Fullstack · Web",
         description:
-          "Reserva de alojamientos bilingüe con precios en USD/EUR, búsqueda por fechas disponibles, pago con Stripe, perfil de usuario y reseñas, con clean architecture, tests y CI.",
+          "Reserva de alojamientos con API REST en Next.js (disponibilidad, reservas y reseñas), acceso con NextAuth (OAuth), Sanity como CMS y pagos con Stripe con webhook verificado. Bilingüe, con arquitectura por capas, tests (también de accesibilidad) y CI.",
       },
       en: {
-        label: "Web",
+        label: "Fullstack · Web",
         description:
-          "Bilingual accommodation booking with USD/EUR pricing, availability search by dates, Stripe payments, user profile and reviews, built with clean architecture, tests and CI.",
+          "Accommodation booking with a Next.js REST API (availability, bookings and reviews), NextAuth (OAuth) sign-in, Sanity as CMS and Stripe payments with a verified webhook. Bilingual, with a layered architecture, tests (including accessibility) and CI.",
       },
     },
   },
@@ -119,19 +98,19 @@ const sources: ProjectSource[] = [
     desktopImage: RoomiesDesktop,
     mobileImage: RoomiesMobile,
     url: "roomieconnect-msl6.onrender.com",
-    tech: ["React", "Tailwind CSS"],
+    tech: ["React", "Python", "Flask", "PostgreSQL"],
     repoLink: "https://github.com/srdgz/RoomieConnect",
     demoLink: "https://roomieconnect-msl6.onrender.com/",
     text: {
       es: {
-        label: "Web · Proyecto colaborativo",
+        label: "Fullstack · Proyecto final de bootcamp",
         description:
-          "Aplicación web para gestionar las tareas y los gastos compartidos entre compañeros de piso.",
+          "Gestión de tareas y gastos entre compañeros de piso: frontend en React y API REST en Flask (unas 50 rutas) con JWT, SQLAlchemy, PostgreSQL, Cloudinary y PayPal.",
       },
       en: {
-        label: "Web · Team project",
+        label: "Fullstack · Bootcamp final project",
         description:
-          "Web app to manage chores and shared expenses between flatmates.",
+          "Chores and shared expenses for flatmates: a React frontend and a Flask REST API (around 50 routes) with JWT, SQLAlchemy, PostgreSQL, Cloudinary and PayPal.",
       },
     },
   },
