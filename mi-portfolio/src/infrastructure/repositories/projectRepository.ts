@@ -10,8 +10,6 @@ import RoomiesDesktop from "@/assets/projects/RoomiesDesktop.png";
 import RoomiesMobile from "@/assets/projects/RoomiesMobile.png";
 import FrescaGoDesktop from "@/assets/projects/FrescaGoDesktop.png";
 import FrescaGoMobile from "@/assets/projects/FrescaGoMobile.png";
-import CookiesDesktop from "@/assets/projects/CookiesDesktop.png";
-import CookiesMobile from "@/assets/projects/CookiesMobile.png";
 import SmartStayDesktop from "@/assets/projects/SmartStayDesktop.png";
 import SmartStayMobile from "@/assets/projects/SmartStayMobile.png";
 import WallifyDesktop from "@/assets/projects/WallifyDesktop.png";
@@ -156,27 +154,6 @@ const sources: ProjectSource[] = [
         label: "Web · Team project",
         description:
           "Web app to manage chores and shared expenses between flatmates.",
-      },
-    },
-  },
-  {
-    title: "Cookies & Cream",
-    desktopImage: CookiesDesktop,
-    mobileImage: CookiesMobile,
-    url: "cookies-front-pied.vercel.app",
-    tech: ["React", "Bootstrap", "Node.js", "Express"],
-    repoLink: "https://github.com/srdgz/cookies-front",
-    demoLink: "https://cookies-front-pied.vercel.app/",
-    text: {
-      es: {
-        label: "Web",
-        description:
-          "Landing page de una pastelería ficticia con información sobre sus productos y tiendas.",
-      },
-      en: {
-        label: "Web",
-        description:
-          "Landing page for a fictional bakery with information about its products and shops.",
       },
     },
   },
