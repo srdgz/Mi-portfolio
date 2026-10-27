@@ -12,8 +12,6 @@ import FrescaGoDesktop from "@/assets/projects/FrescaGoDesktop.png";
 import FrescaGoMobile from "@/assets/projects/FrescaGoMobile.png";
 import SmartStayDesktop from "@/assets/projects/SmartStayDesktop.png";
 import SmartStayMobile from "@/assets/projects/SmartStayMobile.png";
-import WallifyDesktop from "@/assets/projects/WallifyDesktop.png";
-import WallifyMobile from "@/assets/projects/WallifyMobile.png";
 
 interface ProjectText {
   label: string;
@@ -113,26 +111,6 @@ const sources: ProjectSource[] = [
         label: "Web",
         description:
           "Bilingual accommodation booking with USD/EUR pricing, availability search by dates, Stripe payments, user profile and reviews, built with clean architecture, tests and CI.",
-      },
-    },
-  },
-  {
-    title: "Wallify",
-    desktopImage: WallifyDesktop,
-    mobileImage: WallifyMobile,
-    url: "github.com/srdgz/wallify-app",
-    tech: ["React Native", "TypeScript", "Expo", "Pixabay API"],
-    repoLink: "https://github.com/srdgz/wallify-app",
-    text: {
-      es: {
-        label: "Móvil",
-        description:
-          "App para explorar y descargar fondos de pantalla, con filtros por formato, color y temática.",
-      },
-      en: {
-        label: "Mobile",
-        description:
-          "App to browse and download wallpapers, with filters by format, colour and theme.",
       },
     },
   },
