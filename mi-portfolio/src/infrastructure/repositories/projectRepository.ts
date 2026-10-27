@@ -63,12 +63,12 @@ const sources: ProjectSource[] = [
       es: {
         label: "Fullstack · Web",
         description:
-          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, pagos con Stripe verificados en un backend con Node.js y Express, y pedidos por usuario. Con clean architecture, accesibilidad WCAG y tests.",
+          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, pagos con Stripe verificados en un backend con Node.js y Express, y pedidos por usuario. Con clean architecture, accesibilidad WCAG, tests y CI.",
       },
       en: {
         label: "Fullstack · Web",
         description:
-          "Bilingual online grocery shop with EUR/USD pricing, Stripe payments verified on a Node.js and Express backend, and per-user orders. Built with clean architecture, WCAG accessibility and tests.",
+          "Bilingual online grocery shop with EUR/USD pricing, Stripe payments verified on a Node.js and Express backend, and per-user orders. Built with clean architecture, WCAG accessibility, tests and CI.",
       },
     },
   },
