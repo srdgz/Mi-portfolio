@@ -55,10 +55,10 @@ const sources: ProjectSource[] = [
     title: "Compis",
     desktopImage: CompisDesktop,
     mobileImage: CompisMobile,
-    url: "compis.vercel.app",
+    url: "compis-app.vercel.app",
     tech: ["React", "TypeScript", "Python", "Flask", "PostgreSQL", "PayPal"],
     repoLink: "https://github.com/srdgz/compis",
-    demoLink: "https://compis.vercel.app/",
+    demoLink: "https://compis-app.vercel.app/",
     text: {
       es: {
         label: "Fullstack · Web y PWA",
