@@ -6,8 +6,8 @@ import type { ProjectRepository } from "@/domain/repositories/ProjectRepository"
 
 import ApplyTrackDesktop from "@/assets/projects/ApplyTrackDesktop.png";
 import ApplyTrackMobile from "@/assets/projects/ApplyTrackMobile.png";
-import RoomiesDesktop from "@/assets/projects/RoomiesDesktop.png";
-import RoomiesMobile from "@/assets/projects/RoomiesMobile.png";
+import CompisDesktop from "@/assets/projects/CompisDesktop.png";
+import CompisMobile from "@/assets/projects/CompisMobile.png";
 import FrescaGoDesktop from "@/assets/projects/FrescaGoDesktop.png";
 import FrescaGoMobile from "@/assets/projects/FrescaGoMobile.png";
 import SmartStayDesktop from "@/assets/projects/SmartStayDesktop.png";
@@ -52,23 +52,23 @@ const sources: ProjectSource[] = [
     },
   },
   {
-    title: "FrescaGo",
-    desktopImage: FrescaGoDesktop,
-    mobileImage: FrescaGoMobile,
-    url: "frescago.vercel.app",
-    tech: ["React", "TypeScript", "Node.js", "Express", "Firebase", "Stripe"],
-    repoLink: "https://github.com/srdgz/frescaGo",
-    demoLink: "https://frescago.vercel.app/",
+    title: "Compis",
+    desktopImage: CompisDesktop,
+    mobileImage: CompisMobile,
+    url: "compis.vercel.app",
+    tech: ["React", "TypeScript", "Python", "Flask", "PostgreSQL", "PayPal"],
+    repoLink: "https://github.com/srdgz/compis",
+    demoLink: "https://compis.vercel.app/",
     text: {
       es: {
-        label: "Fullstack · Web",
+        label: "Fullstack · Web y PWA",
         description:
-          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, API REST en Node.js y Express (catálogo, tipos de cambio y pago con Stripe verificado en el servidor) y Firebase para autenticación y pedidos. Con clean architecture, accesibilidad WCAG, tests y CI.",
+          "Gestión de un piso compartido (tareas, compra, gastos y deudas) con frontend en React y TypeScript y API REST en Flask con clean architecture, JWT, SQLAlchemy y PostgreSQL. Pagos entre compañeros con PayPal.Me y confirmación del acreedor, PWA instalable, accesibilidad WCAG 2.2 AA, tests end-to-end y CI/CD.",
       },
       en: {
-        label: "Fullstack · Web",
+        label: "Fullstack · Web & PWA",
         description:
-          "Bilingual online grocery shop with EUR/USD pricing, a Node.js and Express REST API (catalogue, exchange rates and Stripe payments verified on the server) and Firebase for sign-in and orders. Built with clean architecture, WCAG accessibility, tests and CI.",
+          "Shared-flat management (tasks, shopping, expenses and debts) with a React and TypeScript frontend and a Flask REST API built with clean architecture, JWT, SQLAlchemy and PostgreSQL. Payments between flatmates with PayPal.Me and creditor confirmation, an installable PWA, WCAG 2.2 AA accessibility, end-to-end tests and CI/CD.",
       },
     },
   },
@@ -94,23 +94,23 @@ const sources: ProjectSource[] = [
     },
   },
   {
-    title: "RoomieConnect",
-    desktopImage: RoomiesDesktop,
-    mobileImage: RoomiesMobile,
-    url: "roomieconnect-msl6.onrender.com",
-    tech: ["React", "Python", "Flask", "PostgreSQL"],
-    repoLink: "https://github.com/srdgz/RoomieConnect",
-    demoLink: "https://roomieconnect-msl6.onrender.com/",
+    title: "FrescaGo",
+    desktopImage: FrescaGoDesktop,
+    mobileImage: FrescaGoMobile,
+    url: "frescago.vercel.app",
+    tech: ["React", "TypeScript", "Node.js", "Express", "Firebase", "Stripe"],
+    repoLink: "https://github.com/srdgz/frescaGo",
+    demoLink: "https://frescago.vercel.app/",
     text: {
       es: {
-        label: "Fullstack · Proyecto final de bootcamp",
+        label: "Fullstack · Web",
         description:
-          "Gestión de tareas y gastos entre compañeros de piso: frontend en React y API REST en Flask (unas 50 rutas) con JWT, SQLAlchemy, PostgreSQL, Cloudinary y PayPal.",
+          "Tienda online de frutas y verduras bilingüe con precios en EUR/USD, API REST en Node.js y Express (catálogo, tipos de cambio y pago con Stripe verificado en el servidor) y Firebase para autenticación y pedidos. Con clean architecture, accesibilidad WCAG, tests y CI.",
       },
       en: {
-        label: "Fullstack · Bootcamp final project",
+        label: "Fullstack · Web",
         description:
-          "Chores and shared expenses for flatmates: a React frontend and a Flask REST API (around 50 routes) with JWT, SQLAlchemy, PostgreSQL, Cloudinary and PayPal.",
+          "Bilingual online grocery shop with EUR/USD pricing, a Node.js and Express REST API (catalogue, exchange rates and Stripe payments verified on the server) and Firebase for sign-in and orders. Built with clean architecture, WCAG accessibility, tests and CI.",
       },
     },
   },
