@@ -29,6 +29,12 @@ export const ArrowUpRightIcon = ({ size }: IconProps) => (
   </Icon>
 );
 
+export const ChevronDownIcon = ({ size }: IconProps) => (
+  <Icon size={size}>
+    <path d="m6 9 6 6 6-6" />
+  </Icon>
+);
+
 export const DownloadIcon = ({ size }: IconProps) => (
   <Icon size={size}>
     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
