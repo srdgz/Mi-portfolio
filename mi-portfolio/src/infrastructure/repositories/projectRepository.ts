@@ -10,6 +10,8 @@ import CompisDesktop from "@/assets/projects/CompisDesktop.png";
 import CompisMobile from "@/assets/projects/CompisMobile.png";
 import FrescaGoDesktop from "@/assets/projects/FrescaGoDesktop.png";
 import FrescaGoMobile from "@/assets/projects/FrescaGoMobile.png";
+import MoriDesktop from "@/assets/projects/MoriDesktop.png";
+import MoriMobile from "@/assets/projects/MoriMobile.png";
 import SmartStayDesktop from "@/assets/projects/SmartStayDesktop.png";
 import SmartStayMobile from "@/assets/projects/SmartStayMobile.png";
 
@@ -30,6 +32,34 @@ interface ProjectSource {
 }
 
 const sources: ProjectSource[] = [
+  {
+    title: "MŌRI",
+    desktopImage: MoriDesktop,
+    mobileImage: MoriMobile,
+    url: "mori-matcha-bar.vercel.app",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle",
+      "Better Auth",
+      "Stripe",
+    ],
+    repoLink: "https://github.com/srdgz/mori",
+    demoLink: "https://mori-matcha-bar.vercel.app/",
+    text: {
+      es: {
+        label: "Fullstack · Web",
+        description:
+          "Tienda online de un matcha bar ficticio, del diseño de marca al panel de la tienda: configurador de bebidas, cuentas, pago con Stripe, seguimiento de pedidos en directo, tarjeta de fidelización y panel para gestionar pedidos y carta. Clean architecture, accesibilidad WCAG 2.2 AA, tests y CI.",
+      },
+      en: {
+        label: "Fullstack · Web",
+        description:
+          "Online shop for a fictional matcha bar, from brand design to the store panel: drink configurator, accounts, Stripe payments, live order tracking, a loyalty card and a panel to run orders and the menu. Clean architecture, WCAG 2.2 AA accessibility, tests and CI.",
+      },
+    },
+  },
   {
     title: "ApplyTrack",
     desktopImage: ApplyTrackDesktop,
