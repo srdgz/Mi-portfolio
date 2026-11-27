@@ -2,8 +2,7 @@ import type { Locale } from "@/domain/entities/locale";
 
 const es = {
   meta: {
-    title:
-      "Sandra Rodríguez | Desarrolladora Fullstack · Web, Mobile y Backend",
+    title: "Sandra Rodríguez | Desarrolladora Fullstack · Web y Mobile",
     description:
       "Soy Sandra Rodríguez, desarrolladora fullstack. Construyo aplicaciones web y móviles con Vue 3, React, React Native y TypeScript, y APIs con Node.js y Python. Explora mi portfolio para conocer mi experiencia y mis proyectos.",
   },
@@ -35,7 +34,7 @@ const es = {
     ariaLabel: "Descargar currículum vitae",
   },
   hero: {
-    kicker: "Desarrolladora Fullstack · Web, Mobile y Backend",
+    kicker: "Desarrolladora Fullstack · Web y Mobile",
     titleStart: "Apps web y móviles que llegan a",
     titleHighlight: "producción",
     intro:
@@ -101,7 +100,7 @@ export type Messages = typeof es;
 
 const en: Messages = {
   meta: {
-    title: "Sandra Rodríguez | Fullstack Developer · Web, Mobile & Backend",
+    title: "Sandra Rodríguez | Fullstack Developer · Web & Mobile",
     description:
       "I'm Sandra Rodríguez, a fullstack developer. I build web and mobile apps with Vue 3, React, React Native and TypeScript, and APIs with Node.js and Python. Explore my portfolio to see my experience and projects.",
   },
@@ -133,7 +132,7 @@ const en: Messages = {
     ariaLabel: "Download curriculum vitae",
   },
   hero: {
-    kicker: "Fullstack Developer · Web, Mobile & Backend",
+    kicker: "Fullstack Developer · Web & Mobile",
     titleStart: "Web and mobile apps that make it to",
     titleHighlight: "production",
     intro:
