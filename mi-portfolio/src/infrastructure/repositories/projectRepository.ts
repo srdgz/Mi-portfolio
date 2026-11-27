@@ -51,12 +51,12 @@ const sources: ProjectSource[] = [
       es: {
         label: "Fullstack · Web y PWA",
         description:
-          "Tienda online de un matcha bar ficticio, del diseño de marca al panel de la tienda: configurador de bebidas, cuentas, pago con Stripe, seguimiento de pedidos en directo, tarjeta de fidelización, PWA instalable y panel para gestionar pedidos y carta. Clean architecture, accesibilidad WCAG 2.2 AA, tests y CI.",
+          "Tienda online de un matcha bar ficticio, del diseño de marca al panel de la tienda: configurador de bebidas, cuentas, pago con Stripe, seguimiento de pedidos en directo, tarjeta de fidelización, panel para gestionar pedidos y carta. Clean architecture, accesibilidad WCAG 2.2 AA, PWA instalable, tests y CI.",
       },
       en: {
         label: "Fullstack · Web & PWA",
         description:
-          "Online shop for a fictional matcha bar, from brand design to the store panel: drink configurator, accounts, Stripe payments, live order tracking, a loyalty card, an installable PWA and a panel to run orders and the menu. Clean architecture, WCAG 2.2 AA accessibility, tests and CI.",
+          "Online shop for a fictional matcha bar, from brand design to the store panel: drink configurator, accounts, Stripe payments, live order tracking, a loyalty card and a panel to run orders and the menu. Clean architecture, WCAG 2.2 AA accessibility, installable PWA, tests and CI.",
       },
     },
   },
