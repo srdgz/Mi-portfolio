@@ -19,7 +19,7 @@ interface JobSource {
 
 const sources: JobSource[] = [
   {
-    company: "MyAlbatross",
+    company: "myalbatross",
     tech: [
       "React Native",
       "Reanimated",
