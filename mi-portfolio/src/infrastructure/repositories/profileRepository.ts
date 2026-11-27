@@ -17,9 +17,9 @@ const profiles: Record<Locale, Profile> = {
   es: createProfile({
     ...common,
     cvUrl:
-      "https://drive.google.com/file/d/1qFetgVY4hqM85yEFad3KtuNWcE-9sqMr/view?usp=sharing",
+      "https://drive.google.com/file/d/1IkuBtRtnAFcT_YnqRXaxgfaoxvjqvwPr/view?usp=sharing",
     specs: [
-      { term: "Rol", detail: "Fullstack · Web, Mobile y Backend" },
+      { term: "Rol", detail: "Fullstack · Web y Mobile" },
       {
         term: "Stack",
         detail: "Vue 3, React, React Native, Node.js, Python + TypeScript",
@@ -32,9 +32,9 @@ const profiles: Record<Locale, Profile> = {
   en: createProfile({
     ...common,
     cvUrl:
-      "https://drive.google.com/file/d/1oD2zPi9wBkfhvmBjNxQKzeGwO9zBIuwD/view?usp=sharing",
+      "https://drive.google.com/file/d/1yTI-0JRAIVxnpih7LQdgQSYT2kI70i6M/view?usp=sharing",
     specs: [
-      { term: "Role", detail: "Fullstack · Web, Mobile & Backend" },
+      { term: "Role", detail: "Fullstack · Web & Mobile" },
       {
         term: "Stack",
         detail: "Vue 3, React, React Native, Node.js, Python + TypeScript",
